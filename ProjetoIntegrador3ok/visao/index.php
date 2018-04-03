@@ -163,6 +163,7 @@
                     <div class="pull-right hidden-xs">
                         <b>Versão</b> 0.9
                     </div>
+                    <!-- nome da equipe -->
                     <strong>Copyright &copy; 2018 <a href="#">NewQuip</a>.</strong> Todos os direitos reservados.
                 </div>
             </footer>
