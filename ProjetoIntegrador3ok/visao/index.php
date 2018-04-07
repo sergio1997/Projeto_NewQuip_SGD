@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SGD</title>
+        <title>Next Job</title>
         <!-- Parte responsiva -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.5 -->
@@ -64,13 +64,13 @@
                                     <ul class="dropdown-menu">
 
                                         <li class="user-header">
-                                            <form action="modelo/login.php" method="POST" onSubmit="return valida_dados_login(this)">
+                                            <form action="../modelo/login.php" method="POST" onSubmit="return valida_dados_login(this)">
                                                 <div class="form-group has-feedback">
-                                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                                                    <input type="email" name="email"class="form-control" placeholder="Email">
                                                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                                                 </div>
                                                 <div class="form-group has-feedback">
-                                                    <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha">
+                                                    <input type="password" name="senha" class="form-control" placeholder="Senha">
                                                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                                                 </div>
                                                 <div class="row">
@@ -92,9 +92,8 @@
                                             <div class="pull-right">
                                                 <a href="#" class="btn btn-default btn-flat">Esqueci a senha</a>
                                             </div>
-                                            </form>
                                         </li>
-                                        
+                                        </form>
                                     </ul>
                                 </li>
                             </ul>
