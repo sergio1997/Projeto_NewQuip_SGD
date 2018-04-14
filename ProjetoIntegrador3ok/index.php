@@ -10,8 +10,10 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
+        <?php 
+        
+        echo "<script>location.href='visao/index.php';</script>"
+        
         ?>
     </body>
 </html>
