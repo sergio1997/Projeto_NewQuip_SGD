@@ -1,19 +1,10 @@
 <?PHP
-
-
-		include "../modelo/conexao.php";
+    include "../modelo/conexao.php";
 ?>
-
-
-
 <?php 
-
-
-
  // esse bloco de código em php verifica se existe a sessão, pois o usuário pode simplesmente não fazer o login e digitar na barra de endereço do seu navegador o caminho para a página principal do site (sistema), burlando assim a obrigação de fazer um login, com isso se ele não estiver feito o login não será criado a session, então ao verificar que a session não existe a página redireciona o mesmo para a index.php. 
  session_start();
- 
- 
+  
  if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)) { 
  unset($_SESSION['email']);
  unset($_SESSION['senha']); 
@@ -25,25 +16,25 @@
  
  
 
-  $sql= @mysql_query("SELECT * FROM  cadastro WHERE email='$_SESSION[email]'");
+  $sql= @mysqli_query("SELECT * FROM  cadastro WHERE email='$_SESSION[email]'");
 	
-	$exibe = @mysql_fetch_assoc($sql);
-		 
-       $nome= $exibe['nome'];
-       $cpf= $exibe['cpf'];
-       $rg=$exibe['indentidade'];
-	   $telefone=$exibe['telefone'];
-       $data_nascimento=$exibe['data_nascimento'];
-	   $email=$exibe['email'];
-	   $senha=$exibe['senha'];
-	   $profissao=$exibe['profissao'];
-	   $rua=$exibe['rua'];
-	   $numero=$exibe['numero'];
-	   $bairro=$exibe['bairro'];
-	   $cidade=$exibe['cidade'];
-	   $cep=$exibe['cep'];
-	   $uf=$exibe['uf'];
-	
+        $exibe = @mysqli_fetch_assoc($sql);
+
+        $nome= $exibe['nome'];
+        $cpf= $exibe['cpf'];
+        $rg=$exibe['indentidade'];
+        $telefone=$exibe['telefone'];
+        $data_nascimento=$exibe['data_nascimento'];
+        $email=$exibe['email'];
+        $senha=$exibe['senha'];
+        $profissao=$exibe['profissao'];
+        $rua=$exibe['rua'];
+        $numero=$exibe['numero'];
+        $bairro=$exibe['bairro'];
+        $cidade=$exibe['cidade'];
+        $cep=$exibe['cep'];
+        $uf=$exibe['uf'];
+
  ?>
  
 
@@ -152,7 +143,7 @@ return (re.test(chr) || evt<20);
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Next Job</title>
+  <title>SGD</title>
   <!-- Parte responsiva -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
@@ -192,9 +183,9 @@ function loginfailed(){
 
 <?php
 
- $sql1= @mysql_query("SELECT * FROM  funcionario WHERE email='$_SESSION[email]'");
+ $sql1= @mysqlI_query("SELECT * FROM  funcionario WHERE email='$_SESSION[email]'");
   
-  $exibe1 = @mysql_fetch_assoc($sql1);
+  $exibe1 = @mysqlI_fetch_assoc($sql1);
      
        $nivel= $exibe1['nivel'];
 
@@ -219,8 +210,8 @@ if($nivel == $nivel_acesso){
 
       <a href="index2.html" class="logo">
 
-      <span class="logo-mini"><b>N</b>JB</span>
-      <span class="logo-lg"><b>Next</b>Job</span>
+      <span class="logo-mini"><b>S</b>GD</span>
+      <span class="logo-lg"><b>SGD</b></span>
     </a>
 
     <nav class="navbar navbar-static-top" role="navigation">
@@ -476,7 +467,7 @@ if($nivel == $nivel_acesso){
       <div class="pull-right hidden-xs">
         <b>Versão</b> 0.9
       </div>
-      <strong>Copyright &copy; 2016 <a href="#">RMD</a>.</strong> Todos os direitos reservados.
+      <strong>Copyright &copy; 2018 <a href="#">NewQuip</a>.</strong> Todos os direitos reservados.
     </div>
   </footer>
   <!--Fim do Rodapé -->
