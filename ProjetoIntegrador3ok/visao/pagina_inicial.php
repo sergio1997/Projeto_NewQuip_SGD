@@ -146,7 +146,13 @@ function confirmacao() {
           </ul>
         </li>
 
-        
+        <li class="treeview">
+          <a href="#"><i class="glyphicon glyphicon-list-alt"></i> <span>Férias</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+              <li><a href="../visao/agedarFerias.php">Agendar Férias</a></li>
+
+          </ul>
+        </li>
 
         <li class="treeview">
           <a href="#">
@@ -188,13 +194,7 @@ function confirmacao() {
           </ul>
         </li>
         
-        <li class="treeview">
-          <a href="#"><i class="glyphicon glyphicon-list-alt"></i> <span>Férias</span> <i class="fa fa-angle-left pull-right"></i></a>
-          <ul class="treeview-menu">
-              <li><a href="../visao/agedarFerias.php">Agendar Férias</a></li>
-
-          </ul>
-        </li>
+        
 
         
       </ul>
