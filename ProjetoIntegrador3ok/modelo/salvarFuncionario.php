@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>SGD</title>
 	
 	
 </head>
 <body>
 <?php 
 
-
+include "../modelo/conexao.php";
 
  // esse bloco de código em php verifica se existe a sessão, pois o usuário pode simplesmente não fazer o login e digitar na barra de endereço do seu navegador o caminho para a página principal do site (sistema), burlando assim a obrigação de fazer um login, com isso se ele não estiver feito o login não será criado a session, então ao verificar que a session não existe a página redireciona o mesmo para a index.php. 
  session_start();
@@ -36,10 +36,6 @@
 	
  ?>
 <?php
-
-
-		include "../modelo/conexao.php ";
-		
 		
 //recuperando os dados
 $id=$_POST['id'];
@@ -86,20 +82,20 @@ $estado=$_POST['estado'];
 
 
 //inserindo dados no banco
-$sql= @mysql_query("UPDATE  funcionario SET Nome='$nome',apelido='$apelido',nomePai='$nome_pai',nomeMae='$nome_mae',sexo='$sexo',cpf='$cpf',rg='$rg',orgaoEmissor='$orgao_emissor',EmissaoRg='$emissao_rg',dataNascimento='$data_nascimento',escolaridade='$escolaridade',cnh='$cnh',numeroCnh='$numero_cnh',categoriaCnh='$categoria_cnh',ValidadeCnh='$validade_cnh',cargo='$cargo',salarioBase='$salario_base',complementoSalarial='$complemento_salarial',SalarioCarteira='$salario_carteira',SalarioLiquido='$salario_liquido',NMcarteiraTrabalho='$NMcarteira_trabalho',pis='$pis',dataAdmissao='$data_admissao',endereco='$endereco',complemento='$complemento',numero='$numero',bairro='$bairro',cep='$cep',telefone='$telefone',celular='$celular',uf='$uf',cidade='$cidade',estado='$estado' WHERE id=$id");
+$sql= @mysqli_query("UPDATE  funcionario SET Nome='$nome',apelido='$apelido',nomePai='$nome_pai',nomeMae='$nome_mae',sexo='$sexo',cpf='$cpf',rg='$rg',orgaoEmissor='$orgao_emissor',EmissaoRg='$emissao_rg',dataNascimento='$data_nascimento',escolaridade='$escolaridade',cnh='$cnh',numeroCnh='$numero_cnh',categoriaCnh='$categoria_cnh',ValidadeCnh='$validade_cnh',cargo='$cargo',salarioBase='$salario_base',complementoSalarial='$complemento_salarial',SalarioCarteira='$salario_carteira',SalarioLiquido='$salario_liquido',NMcarteiraTrabalho='$NMcarteira_trabalho',pis='$pis',dataAdmissao='$data_admissao',endereco='$endereco',complemento='$complemento',numero='$numero',bairro='$bairro',cep='$cep',telefone='$telefone',celular='$celular',uf='$uf',cidade='$cidade',estado='$estado' WHERE id=$id");
 
 
 
-$sql2=@mysql_query("SELECT * FROM setor WHERE nome_setor='$setor'");
+$sql2=@mysqli_query("SELECT * FROM setor WHERE nome_setor='$setor'");
 
-$linha = @mysql_fetch_assoc($sql2);
+$linha = @mysqli_fetch_assoc($sql2);
 
 $id_setor=$linha['id_setor'];
 
 
 
 
-$sql1=@mysql_query("UPDATE codigo_setor SET id_setor='$id_setor' WHERE id='$id'");
+$sql1=@mysqli_query("UPDATE codigo_setor SET id_setor='$id_setor' WHERE id='$id'");
 
  echo"alert('dados alterado com sucesso!!');";
 ?>
