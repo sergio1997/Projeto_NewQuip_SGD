@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<title></title>
+<title>SGD</title>
 
 </head>
 
@@ -44,30 +44,24 @@ WHERE email = '$login'
 AND senha = '$senha'";
 
 
-
+$resultado1 = mysqli_query($conexao, $sql1) or die ("Erro na seleção da tabela.");
  
-
-$resultado1 = mysql_query($sql1,$conexao) or die ("Erro na seleção da tabela.");
- 
-//Caso consiga logar cria a sessão
-
- 
-	if (mysql_num_rows($resultado1)>0) {
+	if (mysqli_num_rows($resultado1)>0) {
   # code...
 
   @session_start();
 
 
-    $_SESSION['nivel'] = $resultado1['nivel'];   
+    
     $_SESSION['email'] = $login;
     $_SESSION['senha'] = $senha;
     
 
      echo "<script>loginsuccessfully()</script>";
   # code...
+
 }
 
- 
 //Caso contrário redireciona para a página de autenticação
 else {
 	
