@@ -244,3 +244,59 @@ require_once("../modelo/conexao.php");
                                 <div class="box-header with-border">
                                     <h4 class="box-title"></h4>
                                 </div>
+                                <form action="../modelo/insereAgendaFerias.php" method="post" name="f1" onSubmit="return valida_dados(this)">
+                                    <?php
+                                    // cria a instrução SQL que vai selecionar os dados
+                                    $query = @sprintf("SELECT * FROM funcionario");
+                                    // executa a query
+                                    $dados = @mysqli_query($conexao, $query) or die(mysql_error());
+                                    // transforma os dados em um array
+                                    $linha = @mysqli_fetch_assoc($dados);
+                                    // calcula quantos dados retornaram
+                                    $total = @mysqli_num_rows($dados);
+                                    ?>
+                                    <div class="form-group has-feedback">
+                                        <b>Nome do funcionário<font color="#FF0000" >*</font></b> 
+                                        <select  name="funcionario" class="form-control select2" style="width: 30%;"   maxlength="11"   onKeypress='return soLetras(event)' />
+                                        <option></option>      
+                                        <?php
+                                        // se o número de resultados for maior que zero, mostra os dados
+                                        if ($total > 0) {
+                                            // inicia o loop que vai mostrar todos os dados
+                                            do {
+                                                ?><option ><?php echo$linha['Nome'] ?></option>
+                                                <?php
+                                                // finaliza o loop que vai mostrar os dados
+                                            } while ($linha = @mysqli_fetch_assoc($dados)); //fimdo if
+                                        }
+                                        ?> 
+                                        </select>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <b>Data inicio de férias<font color="#FF0000" >*</font></b> 
+                                        <input type="date" name="dataInicio" class="form-control" placeholder="ex: 26"  maxlength="11" />      
+                                    </div> 
+                                    <div class="form-group has-feedback">
+                                        <b>Data volta  das férias<font color="#FF0000" >*</font></b> 
+                                        <input type="date" name="dataFinal" class="form-control" placeholder="ex: 26"  maxlength="11" />      
+                                    </div>     
+                                    <div class="form-group has-feedback">
+                                        <input type="submit" class="btn btn-primary" value="Salvar" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <?php include "../visao/contato.php"; ?>
+            <?php include "../visao/suporte.php"; ?>
+            <!--JS SCRIPTS -->
+            <!-- jQuery 2.2.0 -->
+            <script src="../visao/plugins/jQuery/jQuery-2.2.0.min.js"></script>
+            <!-- Bootstrap 3.3.5 -->
+            <script src="../visao/bootstrap/js/bootstrap.min.js"></script>
+            <!-- AdminLTE App -->
+            <script src="../visao/dist/js/app.min.js"></script>
+    </body>
+</html>
