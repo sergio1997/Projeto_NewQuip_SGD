@@ -1,6 +1,6 @@
 
 <?PHP
-include "../modelo/conexao.php ";
+include "../modelo/conexao.php";
 ?>
 
 
@@ -25,9 +25,9 @@ include "../modelo/conexao.php ";
  
  //lista os dados do banco apenas do usario que esta logado no sistema 
  
-  $sql= @mysql_query("SELECT * FROM  cadastro WHERE email='$_SESSION[email]'");
+  $sql= @mysqli_query("SELECT * FROM  cadastro WHERE email='$_SESSION[email]'");
 	
-	$exibe = @mysql_fetch_assoc($sql);
+	$exibe = @mysqli_fetch_assoc($sql);
 		 
    
   // echo "<a href=alterar.php?nome=$exibe[nome] >alterar  </td></a></button>";
@@ -48,7 +48,7 @@ include "../modelo/conexao.php ";
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Next Job</title>
+  <title>SGD</title>
   <!-- Parte responsiva -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
@@ -70,7 +70,7 @@ function confirmacao() {
      var resposta = confirm("Tem certeza que desejaremover seus dados?");
  
      if (resposta == true) {
-          window.location.href="../modelo/ExcluirConta.php?nome=$exibe[nome]";
+          window.location.href="modelo/ExcluirConta.php?nome=$exibe[nome]";
      }
 }
 </script>
@@ -82,8 +82,8 @@ function confirmacao() {
 
       <a  class="logo">
 
-      <span class="logo-mini"><b>N</b>JB</span>
-      <span class="logo-lg"><b>Next</b>Job</span>
+      <span class="logo-mini"><b>S</b>GD</span>
+      <span class="logo-lg"><b>SGD</b></span>
     </a>
 
     <nav class="navbar navbar-static-top" role="navigation">
@@ -224,7 +224,7 @@ function confirmacao() {
 
   <!-- rodapé -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> Todos os direitos reservados.
+    <strong>Copyright &copy; 2018 <a href="#">NewQuip</a>.</strong> Todos os direitos reservados.
   </footer>  
   <!-- fim controle-sidebar -->
   <div class="control-sidebar-bg"></div>
