@@ -185,7 +185,7 @@
          <section id="one" class="main style1">
             <div class="container">
                 <div class="row 150%">
-                    <div class="6u 12u$(medium)">
+                    <div class="6u 12u(medium)">
                         <header class="major">
                             <h2>O sistema SGD tem
                                 diversas<br /> vantagem que você pode ver</h2>
@@ -195,7 +195,7 @@
                         <p>O sistema tem ferramentas que ajudam no calculo de rotatividade e relatórios de desligamentos, por parte dos funcionários, como mais um auxilio sobre a rotatividade de pessoal;</p>
                         
                     </div>
-                    <div class="6u$ 12u$(medium) important(medium)">
+                    <div class="6u 12u(medium) important(medium)">
                         <span class="image fit"><img src="visao/dist/img/5.png" alt="" /></span>
                     </div>
                 </div>
