@@ -41,7 +41,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Next Job</title>
+  <title>SGD</title>
   <!-- Parte responsiva -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
@@ -102,8 +102,8 @@ $(document).ready(function(){
 
       <a href="index2.html" class="logo">
 
-      <span class="logo-mini"><b>N</b>JB</span>
-      <span class="logo-lg"><b>Next</b>Job</span>
+      <span class="logo-mini"><b>S</b>GD</span>
+      <span class="logo-lg"><b>SGD</b></span>
     </a>
 
     <nav class="navbar navbar-static-top" role="navigation">
@@ -217,20 +217,22 @@ $(document).ready(function(){
 
   </aside>
 
-  <div class="content-wrapper">	
+    <div class="content-wrapper"></div>	
     <section class="content-header">
     <h1>FUNCIONARIOS</h1>
     </section>
-    <section class="content">
+      <section class="content">
+      </section>
 
-        <div class="box box-default color-palette-box">
+      <div class="box box-default color-palette-box"></div>
 
     <section class="invoice">
           <div class="row">
-        <div class="col-md-12">
+              <div class="col-md-12"></div>
           <div class="box box-solid">
-
+          
 </div>
+          </div>              
     
          <?php
  
@@ -240,11 +242,11 @@ $(document).ready(function(){
 // cria a instrução SQL que vai selecionar os dados
 $query = sprintf("SELECT id,Nome, cpf FROM funcionario");
 // executa a query
-$dados = mysql_query($query, $conexao) or die(mysql_error());
+$dados = mysqli_query($query, $conexao) or die(mysql_error());
 // transforma os dados em um array
-$linha = mysql_fetch_assoc($dados);
+$linha = mysqli_fetch_assoc($dados);
 // calcula quantos dados retornaram
-$total = mysql_num_rows($dados);
+$total = mysqli_num_rows($dados);
 ?>
 <div class="table-responsive">
 <table border="0" class="display table" width="100%" id="tdFuncionario" > 
@@ -276,7 +278,7 @@ if($total > 0) {
 
         <?php
         // finaliza o loop que vai mostrar os dados
-        }while($linha = mysql_fetch_assoc($dados)); //fimdo if
+        }while($linha = mysqli_fetch_assoc($dados)); //fimdo if
         }
         
         ?>
@@ -286,7 +288,7 @@ if($total > 0) {
          <?php
          
 // tira o resultado da busca da memória
-@mysql_free_result($dados);
+@mysqli_free_result($dados);
  echo"<p>Total de Funcionario da empresa: $total</p>";
 ?>
               
@@ -298,7 +300,7 @@ if($total > 0) {
         <div class="pull-right hidden-xs">
           <b>Versão</b> 0.9
         </div>
-        <strong>Copyright &copy; 2016 <a href="http://almsaeedstudio.com">RMD</a>.</strong> Todos direitos reservados.
+        <strong>Copyright &copy; 2018 <a href="http://almsaeedstudio.com">NewQuip</a>.</strong> Todos direitos reservados.
       </footer> 
 
 <!--JS SCRIPTS -->
