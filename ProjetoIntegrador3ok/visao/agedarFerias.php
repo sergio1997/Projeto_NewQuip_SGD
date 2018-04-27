@@ -138,45 +138,50 @@ require_once("../modelo/conexao.php");
                                     </ul>
                             </ul>
                         </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-off"></i> <span>Desligamento</span> <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="../visao/Desligamento.php">Desligar funcionário</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="treeview">
+                            <a href="#"><i class="glyphicon glyphicon-list-alt"></i> <span>Férias</span> <i class="fa fa-angle-left pull-right"></i></a>
+                            <ul class="treeview-menu">
+                                <li><a href="../visao/agedarFerias.php">Agendar Férias</a></li>
+                                <li><a href="../visao/agedarFerias.php">Listar Férias</a></li>
 
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i> <span>Funcionário</span> <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="CadastrarFuncionario.php">Cadastar funcionário</a></li>
+                                <li><a href="../visao/Funcionario.php">Lista funcionário</a></li>
+                            </ul>
+                        </li>
 
-                    
+                        <li class="treeview">
+                            <a href="#"><i class="fa fa-comments"></i> <span>Reuniões</span> <i class="fa fa-angle-left pull-right"></i></a>
+                            <ul class="treeview-menu">
+                                <li><a href="../visao/Consultarreuniao.php">Consultar reuniões</a></li>
+                                <li><a href="../visao/listarReuniao.php">Listar reuniões</a></li>
+                                <li><a href="../visao/MarcarRuniao.php">Marcar reunião</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#"><i class="fa fa-graduation-cap"></i> <span>Treinamento</span> <i class="fa fa-angle-left pull-right"></i></a>
+                            <ul class="treeview-menu">
+                                <li><a href="../visao/AdicionarTreinamento.php">Adicionar treinamento</a></li>
+                                <li><a href="../visao/agendarTreinamento.php">Agendar treinamento</a></li>
+                                <li><a href="../visao/listarTreinamento.php">Lista treinamento</a></li>
+                            </ul>
+                        </li>
 
-
-                    <li class="treeview">
-                        <a href="#"><i class="glyphicon glyphicon-list-alt"></i> <span>Férias</span> <i class="fa fa-angle-left pull-right"></i></a>
-                        <ul class="treeview-menu">
-                            <li><a href="../visao/agedarFerias.php">Agendar férias</a></li>
-                            
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="glyphicon glyphicon-user"></i> <span>Funcionário</span> <i class="fa fa-angle-left pull-right"></i>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="CadastrarFuncionario.php">Cadastar funcionário</a></li>
-                            <li><a href="../visao/Funcionario.php">Lista funcionário</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="treeview">
-                        <a href="#"><i class="fa fa-comments"></i> <span>Reuniões</span> <i class="fa fa-angle-left pull-right"></i></a>
-                        <ul class="treeview-menu">
-                            <li><a href="../visao/Consultarreuniao.php">Consultar reuniões</a></li>
-                            <li><a href="../visao/listarReuniao.php">Listar reuniões</a></li>
-                            <li><a href="../visao/MarcarRuniao.php">Marcar reunião</a></li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#"><i class="fa fa-graduation-cap"></i> <span>Treinamento</span> <i class="fa fa-angle-left pull-right"></i></a>
-                        <ul class="treeview-menu">
-                            <li><a href="../visao/AdicionarTreinamento.php">Adicionar treinamento</a></li>
-                            <li><a href="../visao/agendarTreinamento.php">Agendar treinamento</a></li>
-                            <li><a href="../visao/listarTreinamento.php">Lista treinamento</a></li>
-                        </ul>
-                    </li>
-                    
                     </ul>
                 </section>
             </aside>
