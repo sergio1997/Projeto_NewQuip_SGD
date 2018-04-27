@@ -5,7 +5,7 @@ session_start();
 
 session_destroy();
 
-header("Location: ../visao/index.php")
+header("Location:http://localhost/projeto_newquip_sgd/ProjetoIntegrador3ok/")
 ?>
 	  
 	  
