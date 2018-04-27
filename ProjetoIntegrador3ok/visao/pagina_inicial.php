@@ -145,7 +145,14 @@ function confirmacao() {
             <li><a href="../visao/informações.php">Informações da Avaliação</a></li>
           </ul>
         </li>
-
+        <li class="treeview">
+          <a href="#">
+            <i class="glyphicon glyphicon-off"></i> <span>Desligamento</span> <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../visao/Desligamento.php">Desligar funcionário</a></li>
+          </ul>
+        </li>    
         <li class="treeview">
           <a href="#"><i class="glyphicon glyphicon-list-alt"></i> <span>Férias</span> <i class="fa fa-angle-left pull-right"></i></a>
           <ul class="treeview-menu">
