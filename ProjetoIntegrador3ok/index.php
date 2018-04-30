@@ -178,7 +178,7 @@
             <div class="inner">
 
                 <center><span ><h1><strong></strong><font color="#696969">SGD</font></h1></strong><br></span></center>
-                SGD é um sistema voltado para pequenas empresas que serve como auxilio <br/>na gestão de recursos humanos,em relação ao modo do gerenciamento de dados <br/>dos colaboradores e que permite, de forma que permite as organizações gerirem <br/>melhor o seu capital humano
+                SGD é um sistema voltado para pequenas empresas que serve como auxilio <br/>na gestão de recursos humanos, em relação ao modo do gerenciamento de dados <br/>dos colaboradores e que permite, de forma que as organizações gerem <br/>melhor o seu capital humano.
 
             </div>
         </section>
