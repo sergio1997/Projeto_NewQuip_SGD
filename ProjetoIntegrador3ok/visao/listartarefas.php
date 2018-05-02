@@ -65,12 +65,12 @@ $logado = $_SESSION['email'];
                         <span class="sr-only">Toggle navigation</span>
                     </a>
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="pagina_inicial.php">Inicio</a></li>
-                        <li><a href="#">Suporte</a></li>
-                        <li><a href="#">Ajuda</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
+                        <ul class="nav navbar-nav">
+                            <li><a href="pagina_inicial.php">Inicio</a></li>
+                            <li><a href="#">Suporte</a></li>
+                            <li><a href="#">Ajuda</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
                     </div>
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
@@ -86,168 +86,168 @@ $logado = $_SESSION['email'];
                 </nav>
             </header>
         </div>
-                                            <aside class="main-sidebar">
+        <aside class="main-sidebar">
 
-                                                <section class="sidebar">
-
-
-
-
-                                                    <ul class="sidebar-menu">
-                                                        <li class="header">Menu</li>
+            <section class="sidebar">
 
 
 
-                                                        <li class="treeview">
-                                                            <a href="#"><i class="fa fa-calendar-check-o"></i> <span>Agenda de tarefas</span> <i class="fa fa-angle-left pull-right"></i></a>
-                                                            <ul class="treeview-menu">
-                                                                <li><a href="../visao/Agendar.php">Agendar Tarefa</a></li>
 
-                                                                <li><a href="../visao/listartarefas.php">Listar Tarefas</a></li>
-                                                            </ul>
-                                                        </li>
-
-                                                        <li class="treeview">
-                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i> <span>Avaliação</span> <i class="fa fa-angle-left pull-right"></i></a>
-                                                            <ul class="treeview-menu">
-                                                                <li><a href="../visao/formulario1.php">Avaliação 1</a></li>
-                                                                <li><a href="../visao/formulario2.php">Avaliação 2</a></li>
-                                                                <li><a href="../visao/formulario3.php">Avaliação 3</a></li>
-                                                                <li><a href="../visao/informações.php">Informações da Avaliação</a></li>
-                                                            </ul>
-                                                        </li>
+                <ul class="sidebar-menu">
+                    <li class="header">Menu</li>
 
 
 
-                                                        <li class="treeview">
-                                                            <a href="#">
-                                                                <i class="glyphicon glyphicon-user"></i> <span>Funcionário</span> <i class="fa fa-angle-left pull-right"></i>
-                                                            </a>
-                                                            <ul class="treeview-menu">
-                                                                <li><a href="CadastrarFuncionario.php">Cadastar Funcionário</a></li>
-                                                                <li><a href="../visao/Funcionario.php">Lista Funcionário</a></li>
-                                                            </ul>
-                                                        </li>
+                    <li class="treeview">
+                        <a href="#"><i class="fa fa-calendar-check-o"></i> <span>Agenda de tarefas</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="../visao/Agendar.php">Agendar Tarefa</a></li>
+
+                            <li><a href="../visao/listartarefas.php">Listar Tarefas</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#"><i class="glyphicon glyphicon-pencil"></i> <span>Avaliação</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="../visao/formulario1.php">Avaliação 1</a></li>
+                            <li><a href="../visao/formulario2.php">Avaliação 2</a></li>
+                            <li><a href="../visao/formulario3.php">Avaliação 3</a></li>
+                            <li><a href="../visao/informações.php">Informações da Avaliação</a></li>
+                        </ul>
+                    </li>
 
 
 
-                                                        <li class="treeview">
-                                                            <a href="#"><i class="fa fa-comments"></i> <span>Reuniões</span> <i class="fa fa-angle-left pull-right"></i></a>
-                                                            <ul class="treeview-menu">
-
-                                                                <li><a href="../visao/listarReuniao.php">Listar setores</a></li>
-                                                                <li><a href="../visao/MarcarRuniao.php">Marcar Reunião</a></li>
-                                                            </ul>
-                                                        </li>
-
-                                                        <li class="treeview">
-                                                            <a href="#"><i class="fa fa-group"></i> <span>Setores</span> <i class="fa fa-angle-left pull-right"></i></a>
-                                                            <ul class="treeview-menu">
-                                                                <li><a href="../visao/CadastraGrupo.php">Cadastrar setor</a></li>
-                                                                <li><a href="../visao/ListaGrupo.php">Listar setores</a></li>
-                                                            </ul>
-                                                        </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="glyphicon glyphicon-user"></i> <span>Funcionário</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="CadastrarFuncionario.php">Cadastar Funcionário</a></li>
+                            <li><a href="../visao/Funcionario.php">Lista Funcionário</a></li>
+                        </ul>
+                    </li>
 
 
 
-                                                        <li class="treeview">
-                                                            <a href="#"><i class="fa fa-graduation-cap"></i> <span>Treinamento</span> <i class="fa fa-angle-left pull-right"></i></a>
-                                                            <ul class="treeview-menu">
-                                                                <li><a href="../visao/AdicionarTreinamento.php">Adicionar Funcionário</a></li>
+                    <li class="treeview">
+                        <a href="#"><i class="fa fa-comments"></i> <span>Reuniões</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
 
-                                                                <li><a href="../visao/listarTreinamento.php">Lista treinamento</a></li>
-                                                            </ul>
-                                                        </li>
+                            <li><a href="../visao/listarReuniao.php">Listar setores</a></li>
+                            <li><a href="../visao/MarcarRuniao.php">Marcar Reunião</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="#"><i class="fa fa-group"></i> <span>Setores</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="../visao/CadastraGrupo.php">Cadastrar setor</a></li>
+                            <li><a href="../visao/ListaGrupo.php">Listar setores</a></li>
+                        </ul>
+                    </li>
 
 
-                                                    </ul>
 
-                                                </section>
+                    <li class="treeview">
+                        <a href="#"><i class="fa fa-graduation-cap"></i> <span>Treinamento</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="../visao/AdicionarTreinamento.php">Adicionar Funcionário</a></li>
 
-                                            </aside>
+                            <li><a href="../visao/listarTreinamento.php">Lista treinamento</a></li>
+                        </ul>
+                    </li>
 
-                                            <div class="content-wrapper">
 
-                                                <section class="content-header">
-                                                    <h1>Formulario modelo 1</h1>
-                                                </section>
-                                                <section class="content">
-                                                    <div class="box box-default color-palette-box">
+                </ul>
 
-                                                        <section class="invoice">
-                                                            <div class="row">
-                                                                <div class="col-md-12">
-                                                                    <div class="box box-solid">
+            </section>
 
-            </div>
+        </aside>
 
-                                                                    <?php
+        <div class="content-wrapper">
+
+            <section class="content-header">
+                <h1>Formulario modelo 1</h1>
+            </section>
+            <section class="content">
+                <div class="box box-default color-palette-box">
+
+                    <section class="invoice">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="box box-solid">
+
+                                </div>
+
+                                <?php
 // definições de host, database, usuário e senha
 
 
-                                                                    include "../modelo/conexao.php ";
+                                include "../modelo/conexao.php";
 
 // cria a instrução SQL que vai selecionar os dados
-                                                                    $query = sprintf("SELECT idreuniao,grupo FROM reuniao");
+                                $query = sprintf("SELECT idreuniao,grupo FROM reuniao");
 // executa a query
-                                                                    $dados = mysqli_query($conexao, $query) or die(mysql_error());
+                                $dados = mysqli_query($conexao, $query) or die(mysqli_error());
 // transforma os dados em um array
-                                                                    $linha = mysqli_fetch_assoc($dados);
+                                $linha = mysqli_fetch_assoc($dados);
 // calcula quantos dados retornaram
-                                                                    $total = mysqli_num_rows($dados);
-                                                                    ?>
+                                $total = mysqli_num_rows($dados);
+                                ?>
 
-                                                                    <div class="table-responsive">
-                                                                        <table border="0" class="display table" width="100%" id="tdFuncionario"> 
-                                                                            <thead>
+                                <div class="table-responsive">
+                                    <table border="0" class="display table" width="100%" id="tdFuncionario"> 
+                                        <thead>
 
 
-                                                                                <tr>
-                                                                                    <td ><strong>ID</strong> <td><strong>SETOR</strong> </td>
-<?php
+                                            <tr>
+                                                <td ><strong>ID</strong> <td><strong>SETOR</strong> </td>
+                                                <?php
 // se o número de resultados for maior que zero, mostra os dados
-if ($total > 0) {
+                                                if ($total > 0) {
 
-    // inicia o loop que vai mostrar todos os dados
-    do {
-        ?>
+                                                    // inicia o loop que vai mostrar todos os dados
+                                                    do {
+                                                        ?>
 
-                                                                                        </tr>
-                                                                                    </thead>
-                                                                                    <tbody> 
-                                                                                        <tr>
-                                                                                            <td ><?= $linha['idreuniao'] ?> </td> <td><?= $linha['grupo'] ?></td>
-                                                                                            <td> <a href="../visao/AlterarReuniao.php?id=<?php echo $linha['idreuniao']; ?>"><button class="btn btn-primary">Alterar </button></a></td>
-                                                                                            <td><a href="../modelo/ExcluirReuniao.php?id=<?php echo $linha['idreuniao']; ?>" onClick="return confirm('Deseja realmente deletar o funcionario: <?php echo $linha['idreuniao']; ?> ?')"><button class="btn btn-primary ">Excluir </button></a></td>
-                                                                                        </tr>
-                                                                                        </tr>
-
-
+                                                    </tr>
+                                                </thead>
+                                                <tbody> 
+                                                    <tr>
+                                                        <td ><?= $linha['idreuniao'] ?> </td> <td><?= $linha['grupo'] ?></td>
+                                                        <td> <a href="../visao/AlterarReuniao.php?id=<?php echo $linha['idreuniao']; ?>"><button class="btn btn-primary">Alterar </button></a></td>
+                                                        <td><a href="../modelo/ExcluirReuniao.php?id=<?php echo $linha['idreuniao']; ?>" onClick="return confirm('Deseja realmente deletar o funcionario: <?php echo $linha['idreuniao']; ?> ?')"><button class="btn btn-primary ">Excluir </button></a></td>
+                                                    </tr>
+                                                    </tr>
 
 
-        <?php
-        // finaliza o loop que vai mostrar os dados
-    } while ($linha = mysqli_fetch_assoc($dados)); //fimdo if
-}
-?>
-                                                                            </tbody> 
-                                                                        </table>
-                                                                                <?php
+
+
+                                                    <?php
+                                                    // finaliza o loop que vai mostrar os dados
+                                                } while ($linha = mysqli_fetch_assoc($dados)); //fimdo if
+                                            }
+                                            ?>
+                                        </tbody> 
+                                    </table>
+                                    <?php
 // tira o resultado da busca da memória
-                                                                                @mysqli_free_result($dados);
-                                                                                echo"<h3 class=\"box-title\">Total de Funcionario da empresa: $total</h3>";
-                                                                                ?>
+                                    @mysqli_free_result($dados);
+                                    echo"<h3 class=\"box-title\">Total de Funcionario da empresa: $total</h3>";
+                                    ?>
 
-                                                                        </section>
+                                    </section>
 
 
-        <!--JS SCRIPTS -->
+                                    <!--JS SCRIPTS -->
 
-        <!-- jQuery 2.2.0 -->
-        <script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
-        <!-- Bootstrap 3.3.5 -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="dist/js/app.min.js"></script>
-    </body>
-</html>
+                                    <!-- jQuery 2.2.0 -->
+                                    <script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
+                                    <!-- Bootstrap 3.3.5 -->
+                                    <script src="bootstrap/js/bootstrap.min.js"></script>
+                                    <!-- AdminLTE App -->
+                                    <script src="dist/js/app.min.js"></script>
+                                    </body>
+                                    </html>
