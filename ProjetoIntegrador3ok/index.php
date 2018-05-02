@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTMLteste>
 <html>
     <head>
         <title>SGD</title>
