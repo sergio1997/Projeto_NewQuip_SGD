@@ -45,9 +45,9 @@ include "../modelo/conexao.php";
 
 $id = $_GET['id']; // Recebendo o valor enviado pelo link
 
-$sql=@mysql_query("SELECT * FROM reuniao WHERE idreuniao='".$id."'"); // A instrução delete irá apagar todos os dados da id recebida
+$sql=@mysqli_query("SELECT * FROM reuniao WHERE idreuniao='".$id."'"); // A instrução delete irá apagar todos os dados da id recebida
 
-$exibe = @mysql_fetch_assoc($sql);
+$exibe = @mysqli_fetch_assoc($sql);
        $idreuniao=$exibe['idreuniao'];
        $grupo= $exibe['grupo'];
        $data_reuniao= $exibe['data_reuniao'];
@@ -117,7 +117,7 @@ return (re.test(chr) || evt<20);
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Next Job</title>
+  <title>NewQuip</title>
   <!-- Parte responsiva -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
@@ -149,8 +149,8 @@ function confirmacao() {
 
       <a href="index2.html" class="logo">
 
-      <span class="logo-mini"><b>N</b>JB</span>
-      <span class="logo-lg"><b>Next</b>Job</span>
+      <span class="logo-mini"><b>S</b>GD</span>
+      <span class="logo-lg"><b>SGD</b></span>
     </a>
 
     <nav class="navbar navbar-static-top" role="navigation">
@@ -330,7 +330,7 @@ function confirmacao() {
         <div class="pull-right hidden-xs">
           <b>Versão</b> 0.9
         </div>
-        <strong>Copyright &copy; 2016 <a href="http://almsaeedstudio.com">RMD</a>.</strong> Todos direitos reservados.
+        <strong>Copyright &copy; 2018 <a href="http://almsaeedstudio.com">NewQuip</a>.</strong> Todos direitos reservados.
       </footer>
   
   <!-- fim controle-sidebar -->
