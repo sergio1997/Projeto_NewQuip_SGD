@@ -37,7 +37,7 @@
  ?>
 <?PHP
 
-		include "../modelo/conexao.php ";
+		include "../modelo/conexao.php";
 ?>
 <?php 
 //recuperando os dados 
@@ -57,7 +57,7 @@ $produtividade=$_POST['produtividade'];
 //daos do login
 
 //inserindo dados no banco
-$sql1= @mysql_query("UPDATE  agendatarefa SET tarefa='$tarefas',tarefasfazer='$tarefasfazer', datainicio='$datainicio',horainicio='$horainicio',dataterminio='$dataterminio',horaterminio='$horaterminio',estimativadata='$estimativadata',estimativahora='$estimativahora',produtividade='$produtividade' WHERE idagenda='$id'" );
+$sql1= @mysqli_query("UPDATE  agendatarefa SET tarefa='$tarefas',tarefasfazer='$tarefasfazer', datainicio='$datainicio',horainicio='$horainicio',dataterminio='$dataterminio',horaterminio='$horaterminio',estimativadata='$estimativadata',estimativahora='$estimativahora',produtividade='$produtividade' WHERE idagenda='$id'" );
 
  echo"alert('Dados de acesso alterado com sucesso!!');";
 ?>
