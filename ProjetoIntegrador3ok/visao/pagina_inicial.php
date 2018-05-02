@@ -150,7 +150,7 @@ function confirmacao() {
             <i class="glyphicon glyphicon-off"></i> <span>Desligamento</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../visao/Desligamento.php">Desligar funcionário</a></li>
+            <li><a href="../visao/desligamento.php">Desligar funcionário</a></li>
           </ul>
         </li>    
         <li class="treeview">
