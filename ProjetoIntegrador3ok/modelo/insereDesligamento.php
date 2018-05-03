@@ -39,3 +39,19 @@ $questao6=$_POST['q6'];
 //questão 7
 $questao7=$_POST['q7'];
 
+
+$query1=@mysql_query("SELECT * FROM funcionario WHERE Nome='$nomeFuncionario'");
+    $exibe2=@mysql_fetch_assoc($query1);
+    $id=$exibe2['id'];
+
+
+   
+
+
+$query=mysql_query("INSERT INTO desligamento (id,dataSaida,motivo,questao1,questao1PQ,questao2,questao3,questao4,q4Quantidade,questao51,questao52,questao53,questao54,questao55,q5observacao,questao6,questao7) VALUES('$id','$dataSaida','$MotivoDesligamento','$questao1','$questao1PQ','$questao2','$questao3','$questao4','$q4Quantidade','$questao51','$questao52','$questao53','$questao54','$questao55','$q5observacao','$questao6','$questao7')");
+
+
+
+ header('location:../visao/Desligamento.php');
+
+?>
