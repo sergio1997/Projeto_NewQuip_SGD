@@ -183,9 +183,9 @@ function loginfailed(){
 
 <?php
 
- $sql1= @mysqlI_query("SELECT * FROM  funcionario WHERE email='$_SESSION[email]'");
+ $sql1= @mysqli_query("SELECT * FROM  funcionario WHERE email='$_SESSION[email]'");
   
-  $exibe1 = @mysqlI_fetch_assoc($sql1);
+  $exibe1 = @mysqli_fetch_assoc($sql1);
      
        $nivel= $exibe1['nivel'];
 
