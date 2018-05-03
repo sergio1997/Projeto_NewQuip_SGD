@@ -464,7 +464,7 @@ include "../modelo/conexao.php";
                                                                                 // cria a instrução SQL que vai selecionar os dados
                                                                                 $query = sprintf("SELECT * FROM setor");
                                                                                 // executa a query
-                                                                                $dados = mysqli_query($query, $conexao) or die(mysqli_error());
+                                                                                $dados = mysqli_query($conexao,$query) or die(mysqli_error());
                                                                                 // transforma os dados em um array
                                                                                 $linha = mysqli_fetch_assoc($dados);
                                                                                 // calcula quantos dados retornaram
