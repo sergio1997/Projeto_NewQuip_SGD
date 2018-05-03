@@ -1,3 +1,7 @@
+<?php
+include "../modelo/conexao.php";
+?>
+
 <?php 
  // esse bloco de código em php verifica se existe a sessão, pois o usuário pode simplesmente não fazer o login e digitar na barra de endereço do seu navegador o caminho para a página principal do site (sistema), burlando assim a obrigação de fazer um login, com isso se ele não estiver feito o login não será criado a session, então ao verificar que a session não existe a página redireciona o mesmo para a index.php. 
  session_start();
@@ -242,14 +246,15 @@ function confirmacao() {
           </div>
       <form action="../modelo/insereDesligamento.php" method="post" name="f1" onSubmit="return valida_dados(this)">
             <?php
+             
 // cria a instrução SQL que vai selecionar os dados
 $query = sprintf("SELECT * FROM funcionario");
 // executa a query
-$dados = @mysql_query($query, $conexao) or die(mysql_error());
+$dados = mysqli_query($conexao, $query) or die(mysqli_error());
 // transforma os dados em um array
-$linha = @mysql_fetch_assoc($dados);
+$linha = mysqli_fetch_assoc($dados);
 // calcula quantos dados retornaram
-$total = @mysql_num_rows($dados);
+$total = mysqli_num_rows($dados);
 ?>
 
 
@@ -270,7 +275,7 @@ if($total > 0) {
 
          <?php
         // finaliza o loop que vai mostrar os dados
-        }while($linha = @mysql_fetch_assoc($dados)); //fimdo if
+        }while($linha = @mysqli_fetch_assoc($dados)); //fimdo if
         }
         
         ?>
