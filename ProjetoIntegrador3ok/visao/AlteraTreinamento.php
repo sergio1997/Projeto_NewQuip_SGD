@@ -259,13 +259,13 @@ $logado = $_SESSION['email'];
                                                                                     </div>
 
                                                                                     <?php
-                                                                                    include "../modelo/conexao.php ";
+                                                                                    include "../modelo/conexao.php";
 
                                                                                     $id = $_GET['id']; // Recebendo o valor enviado pelo link
 
-                                                                                    $sql = @mysqlI_query("SELECT * FROM treinamento WHERE idtreinamento='" . $id . "'"); // A instrução delete irá apagar todos os dados da id recebida
+                                                                                    $sql = @mysqli_query("SELECT * FROM treinamento WHERE idtreinamento='" . $id . "'"); // A instrução delete irá apagar todos os dados da id recebida
 
-                                                                                    $exibe = @mysqIl_fetch_assoc($sql);
+                                                                                    $exibe = @mysqli_fetch_assoc($sql);
                                                                                     $idtreiamento = $exibe['idtreinamento'];
                                                                                     $nome = $exibe['nome'];
                                                                                     $evolucao = $exibe['evolucao'];
