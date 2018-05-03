@@ -1,7 +1,7 @@
 <?PHP
 
 
-		include "../modelo/conexao.php ";
+		include "../modelo/conexao.php";
 
 
     include "../modelo/nivel_acesso1.php";
@@ -35,9 +35,9 @@
  
  
  
-  $sql= @mysql_query("SELECT * FROM  funcionario WHERE id='".$id."'");
+  $sql= @mysqli_query("SELECT * FROM  funcionario WHERE id='".$id."'");
 	
-	$exibe = @mysql_fetch_assoc($sql);
+	$exibe = @mysqli_fetch_assoc($sql);
 		 
        
 	   $email=$exibe['email'];
@@ -49,7 +49,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Next Jobs</title>
+<title>SGD</title>
 <script language="javascript">
 
 function valida_dados (nomeform)
@@ -107,7 +107,7 @@ return (re.test(chr) || evt<20);
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Next Job</title>
+  <title>SGD</title>
   <!-- Parte responsiva -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
@@ -139,8 +139,8 @@ function confirmacao() {
 
       <a href="index2.html" class="logo">
 
-      <span class="logo-mini"><b>N</b>JB</span>
-      <span class="logo-lg"><b>Next</b>Job</span>
+      <span class="logo-mini"><b>S</b>GD</span>
+      <span class="logo-lg"><b>SGD</b></span>
     </a>
 
     <nav class="navbar navbar-static-top" role="navigation">
@@ -330,7 +330,7 @@ function confirmacao() {
         <div class="pull-right hidden-xs">
           <b>Versão</b> 0.9
         </div>
-        <strong>Copyright &copy; 2016 <a href="http://almsaeedstudio.com">RMD</a>.</strong> Todos direitos reservados.
+        <strong>Copyright &copy; 2018 <a href="http://almsaeedstudio.com">NewQuip</a>.</strong> Todos direitos reservados.
       </footer>
 
 <!--JS SCRIPTS -->
