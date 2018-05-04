@@ -193,7 +193,7 @@ $logado = $_SESSION['email'];
 
                                                             <?php
                                                             // finaliza o loop que vai mostrar os dados
-                                                        } while ($linha = mysql_fetch_assoc($dados)); //fimdo if
+                                                        } while ($linha = mysqli_fetch_assoc($dados)); //fimdo if
                                                     }
                                                     ?>
                                                 </tbody>
