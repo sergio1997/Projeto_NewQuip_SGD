@@ -195,8 +195,7 @@ function confirmacao() {
         <li class="treeview">
           <a href="#"><i class="fa fa-graduation-cap"></i> <span>Treinamento</span> <i class="fa fa-angle-left pull-right"></i></a>
           <ul class="treeview-menu">
-            <li><a href="../visao/AdicionarTreinamento.php">Adicionar Funcionário</a></li>
-
+            <li><a href="../visao/AdicionarTreinamento.php">Adicionar Treinamento</a></li>
             <li><a href="../visao/listarTreinamento.php">Lista treinamento</a></li>
           </ul>
         </li>
