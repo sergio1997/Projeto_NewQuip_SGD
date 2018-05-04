@@ -188,7 +188,7 @@
                     <div class="6u 12u(medium)">
                         <header class="major">
                             <h2>O sistema SGD tem
-                                diversas<br /> vantagem que você pode ver</h2>
+                                diversas<br /> vantagens que você pode ver</h2>
                         </header>
                         <p>O sistema possibilita uma forma melhor do gerenciamento a coleta de dados dos funcionários;</p>
                         <p>O sistema terá recebimentos de feedback dos funcionários por meio de avaliação 360º;</p>
@@ -196,7 +196,7 @@
                         
                     </div>
                     <div class="6u 12u(medium) important(medium)">
-                        <span class="image fit"><img src="visao/dist/img/5.png" alt="" /></span>
+                        
                     </div>
                 </div>
             </div>
@@ -283,7 +283,7 @@
         <section id="four" class="main style1 special ">
             <div class="container">
                 <header class="major">
-                    <h2>Quer experimente nosso sistema por 15 dias(grátis)</h2>
+                    <h2>Quer experimentar nosso sistema por 15 dias(grátis)</h2>
                 </header>
                 <ul class="actions uniform">
                     <li><a class="button"data-toggle="modal" data-target="#ModalC">Cadastre-se</a></li>
