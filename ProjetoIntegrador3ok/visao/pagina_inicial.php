@@ -2,7 +2,7 @@
 include "../modelo/conexao.php";
 include "../modelo/iniciarsessao.php";
 
-//lista os dados do banco apenas do usario que esta logado no sistema 
+//lista os dados do banco apenas do usario que esta logado no sistema t
 $sql = @mysqli_query("SELECT * FROM  cadastro WHERE email='$_SESSION[email]'");
 $exibe = @mysqli_fetch_assoc($sql);
 // echo "<a href=alterar.php?nome=$exibe[nome] >alterar  </td></a></button>";
