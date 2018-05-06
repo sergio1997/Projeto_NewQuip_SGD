@@ -1,5 +1,6 @@
 <?php
 include"../modelo/iniciarsessao.php";
+include"../modelo/conexao.php";
 // echo "<a href=alterar.php?nome=$exibe[nome] >alterar  </td></a></button>";
 //echo "<td><a href=ExcluirConta.php?nome=$exibe[nome] ></td></a></button></tr>";	
 ?>
@@ -26,7 +27,7 @@ include"../modelo/iniciarsessao.php";
 
                     <?php
                     // definições de host, database, usuário e senha
-                    include "../modelo/conexao.php";
+                    //include "../modelo/conexao.php";
                     // cria a instrução SQL que vai selecionar os dados
                     $query = sprintf("SELECT idreuniao,grupo FROM reuniao");
                     // executa a query
