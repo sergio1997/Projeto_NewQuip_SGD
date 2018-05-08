@@ -92,3 +92,165 @@ function confirmacao() {
 
     </nav>
   </header>
+      </script>
+    </head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+
+      <a href="index2.html" class="logo">
+
+      <span class="logo-mini"><b>N</b>JB</span>
+      <span class="logo-lg"><b>Next</b>Job</span>
+    </a>
+
+    <nav class="navbar navbar-static-top" role="navigation">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+              <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="pagina_inicial.php">Inicio</a></li>
+            <li data-toggle="modal" data-target="#suporte"><a href="#">Suporte</a></li>
+            <li data-toggle="modal" data-target="#contato"><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
+			  <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+			<li><a  " ><?php echo $logado ?></a></li>
+            <li><a  href="../controle/logout.php" >» Logout</a></li>
+            <li class="dropdown user user-menu">
+
+              <ul class="dropdown-menu">
+			  <div class="navbar-custom-menu">
+
+				<ul class="nav navbar-nav">
+
+    </nav>
+  </header>
+      </script>
+    </head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+
+      <a href="index2.html" class="logo">
+
+      <span class="logo-mini"><b>N</b>JB</span>
+      <span class="logo-lg"><b>Next</b>Job</span>
+    </a>
+
+    <nav class="navbar navbar-static-top" role="navigation">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+              <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="pagina_inicial.php">Inicio</a></li>
+            <li data-toggle="modal" data-target="#suporte"><a href="#">Suporte</a></li>
+            <li data-toggle="modal" data-target="#contato"><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
+			  <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+			<li><a  " ><?php echo $logado ?></a></li>
+            <li><a  href="../controle/logout.php" >» Logout</a></li>
+            <li class="dropdown user user-menu">
+
+              <ul class="dropdown-menu">
+			  <div class="navbar-custom-menu">
+
+				<ul class="nav navbar-nav">
+
+    </nav>
+  </header></script>
+    </head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+
+      <a href="index2.html" class="logo">
+
+      <span class="logo-mini"><b>N</b>JB</span>
+      <span class="logo-lg"><b>Next</b>Job</span>
+    </a>
+
+    <nav class="navbar navbar-static-top" role="navigation">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+              <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="pagina_inicial.php">Inicio</a></li>
+            <li data-toggle="modal" data-target="#suporte"><a href="#">Suporte</a></li>
+            <li data-toggle="modal" data-target="#contato"><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
+			  <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+			<li><a  " ><?php echo $logado ?></a></li>
+            <li><a  href="../controle/logout.php" >» Logout</a></li>
+            <li class="dropdown user user-menu">
+
+              <ul class="dropdown-menu">
+			  <div class="navbar-custom-menu">
+
+				<ul class="nav navbar-nav">
+
+    </nav>
+  </header></script>
+    </head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+
+      <a href="index2.html" class="logo">
+
+      <span class="logo-mini"><b>N</b>JB</span>
+      <span class="logo-lg"><b>Next</b>Job</span>
+    </a>
+
+    <nav class="navbar navbar-static-top" role="navigation">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+              <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="pagina_inicial.php">Inicio</a></li>
+            <li data-toggle="modal" data-target="#suporte"><a href="#">Suporte</a></li>
+            <li data-toggle="modal" data-target="#contato"><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
+			  <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+			<li><a  " ><?php echo $logado ?></a></li>
+            <li><a  href="../controle/logout.php" >» Logout</a></li>
+            <li class="dropdown user user-menu">
+
+              <ul class="dropdown-menu">
+			  <div class="navbar-custom-menu">
+
+				<ul class="nav navbar-nav">
+
+    </nav>
+  </header>
+      </header>
+ <aside class="main-sidebar">
+    <section class="sidebar" >
+    <ul class="sidebar-menu">
+        <li class="header">Menu</li>
+        <li class="treeview">
+          <a href="#"><i class="fa fa-calendar-check-o"></i> <span>Agenda de tarefas</span> <i class="fa fa-angle-left pull-right"></i></a>
+          <ul class="treeview-menu">
+            <li><a href="../visao/Agendar.php">Agendar tarefa</a></li>
+            <li><a href="../visao/listartarefas.php">Listar tarefas</a></li>
+          </ul>
+        </li>
