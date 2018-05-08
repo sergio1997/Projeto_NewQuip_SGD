@@ -29,7 +29,7 @@ include "../modelo/nivel_acesso1.php";
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Next Job</title>
+  <title>SGD</title>
   <!-- Parte responsiva -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.5 -->
@@ -53,3 +53,42 @@ function confirmacao() {
      }
 }
 
+
+</script>
+    </head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+
+      <a href="index2.html" class="logo">
+
+      <span class="logo-mini"><b>SGD</b>SGD</span>
+      <span class="logo-lg"><b>SGD</b>SGD</span>
+    </a>
+
+    <nav class="navbar navbar-static-top" role="navigation">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+              <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="pagina_inicial.php">Inicio</a></li>
+            <li data-toggle="modal" data-target="#suporte"><a href="#">Suporte</a></li>
+            <li data-toggle="modal" data-target="#contato"><a href="#">Ajuda</a></li>
+          </ul>
+        </div>
+			  <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+			<li><a  " ><?php echo $logado ?></a></li>
+            <li><a  href="../controle/logout.php" >» Logout</a></li>
+            <li class="dropdown user user-menu">
+
+              <ul class="dropdown-menu">
+			  <div class="navbar-custom-menu">
+
+				<ul class="nav navbar-nav">
+
+    </nav>
+  </header>
