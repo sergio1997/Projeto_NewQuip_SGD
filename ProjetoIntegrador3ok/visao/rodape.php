@@ -1,5 +1,8 @@
          <!-- rodapé -->
             <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                            <b>Versão</b> 0.9
+                        </div>
                 <strong>Copyright &copy; 2018 <a href="#">NewQuip</a>.</strong> Todos os direitos reservados.
             </footer>  
             <!-- fim controle-sidebar -->
@@ -14,3 +17,4 @@
         <script src="dist/js/app.min.js"></script>
     </body>
 </html>
+ 
