@@ -1,4 +1,3 @@
-</script>
 <script language="javascript1.2">
 function soLetras(e){
 if (document.all){var evt=event.keyCode;}
