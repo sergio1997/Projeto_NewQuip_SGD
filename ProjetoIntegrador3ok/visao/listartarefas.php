@@ -1,8 +1,6 @@
 <?php
 include"../modelo/iniciarsessao.php";
-include"../modelo/conexao.php";
-// echo "<a href=alterar.php?nome=$exibe[nome] >alterar  </td></a></button>";
-//echo "<td><a href=ExcluirConta.php?nome=$exibe[nome] ></td></a></button></tr>";	
+require_once "../modelo/conexao.php";
 ?>
 <!DOCTYPE html>
 <html>
