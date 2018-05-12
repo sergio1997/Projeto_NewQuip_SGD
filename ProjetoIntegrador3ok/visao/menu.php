@@ -69,6 +69,14 @@
                         </ul>
                     </li>    
                     <li class="treeview">
+                        <a href="#">
+                            <i class="glyphicon glyphicon-comment"></i> <span>Feedback</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="../visao/responderfeedback.php">Responder Feedback</a></li>
+                        </ul>
+                    </li> 
+                    <li class="treeview">
                         <a href="#"><i class="glyphicon glyphicon-list-alt"></i> <span>Férias</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
                             <li><a href="../visao/agedarFerias.php">Agendar Férias</a></li>
@@ -82,6 +90,16 @@
                         <ul class="treeview-menu">
                             <li><a href="CadastrarFuncionario.php">Cadastar Funcionário</a></li>
                             <li><a href="../visao/Funcionario.php">Lista Funcionário</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="glyphicon glyphicon-refresh"></i> <span>Índice de Rotatividade</span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="rotatividade.php">Perda de Pessoas</a></li>
+                            <li><a href="rotativadadeRH.php">Rotativade RH</a></li>
+                            <li><a href="rotatividadeFuncionario.php">Perda por Iniciativa Funcionário</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
