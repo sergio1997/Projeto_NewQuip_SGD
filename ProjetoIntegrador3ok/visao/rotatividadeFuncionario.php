@@ -42,7 +42,7 @@ include "../modelo/iniciarsessao.php";
                             <h4 class="box-title"></h4>
                         </div>
                         
-                        <form action="../visao/CalculaRotatividadeFuncionario.php" method="post" name="f1" onSubmit="return valida_dados(this)">
+                        <form action="calculaRotatividadeFuncionario.php" method="post" name="f1" onSubmit="return valida_dados(this)">
                             <div class="form-group has-feedback">
                                 <b>Data inicial<font color="#FF0000" >*</font></b> 
                                 <input type="date" name="dataInicial" class="form-control" placeholder="ex: 26"  maxlength="11" />      
