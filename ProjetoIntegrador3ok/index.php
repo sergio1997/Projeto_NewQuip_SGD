@@ -1,10 +1,9 @@
-<!DOCTYPE HTMLtestenovoTeste>
+<!DOCTYPE HTML>
 <html>
     <head>
         <title>SGD</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta rel="stulisheet" href="visao/bootstrap/css/bootstrap.css"/>
         <link rel="stylesheet" href="visao/bootstrap/css/bootstrap.min.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -30,7 +29,6 @@
         <link rel="stylesheet" href="visao/dist/css/main.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script language="javascript">
-
             function valida_dados_login(loginform)
             {
                 if (loginform.email.value == "")
@@ -47,7 +45,7 @@
             }
         </script>
         <script language="javascript">
-            //chama a função (nomeform) -->
+//chama a função (nomeform) -->
             function valida_dados_contato(nomeform)
             {
                 if (nomeform.nome.value == "")
@@ -110,9 +108,9 @@
         </script>
     </head>
     <body class="hold-transition skin-blue layout-top-nav">
-        <div class="wrapper"></div> 
+        <div class="wrapper"></div>
         <header class="main-header">
-            <nav class="navbar navbar-static-top">
+            <nav class="navbar navbar-fixed-top ">
                 <div class="container">
                     <div class="navbar-header">
                         <a href="index.php" class="navbar-brand"><b>SGD</b></a>
@@ -120,15 +118,14 @@
                             <i class="fa fa-bars"></i>
                         </button>
                     </div>
-
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="#header"  class="scroll">Inicio</a></li>
-                            <li><a href="#contact" class="scroll">Contatos</a></li>
+                            <li><a href="#contact" class="scroll"">Contatos</a></li>
                             <li><a href="#four" class="scroll">Cadastre-se</a></li>
                         </ul>
                     </div>
-
+                    <!--Menu dropdown login-->
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
                             <li class="dropdown user user-menu">
@@ -146,7 +143,7 @@
                                                 <input type="password" name="senha" class="form-control" placeholder="Senha">
                                                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                                             </div>
-                                        
+
                                             <div class="row">
                                                 <div class="col-xs-6">
                                                     <div class="checkbox icheck">
@@ -154,7 +151,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        
                                     </li>
                                     <li class="user-footer">
                                         <div class="pull-left ">
@@ -169,40 +165,42 @@
                             </li>
                         </ul>
                     </div>
-
+                    <!-- /Menu dropdown login -->
                 </div>
-
             </nav>
         </header>
+        <!-- Imicio da página -->
         <section id="header" >
             <div class="inner">
 
                 <center><span ><h1><strong></strong><font color="#696969">SGD</font></h1></strong><br></span></center>
-                SGD é um sistema voltado para pequenas empresas que serve como auxilio <br/>na gestão de recursos humanos, em relação ao modo do gerenciamento de dados <br/>dos colaboradores e que permite, de forma que as organizações gerem <br/>melhor o seu capital humano.
+                SGD é um sistema voltado para pequenas empresas que serve como auxilio <br/>na gestão de recursos humanos,em relação ao modo do gerenciamento de dados <br/>dos colaboradores e que permite, de forma que permite as organizações gerirem <br/>melhor o seu capital humano
 
             </div>
         </section>
-         <section id="one" class="main style1">
+
+        <!-- .. -->
+        <section id="one" class="main style1">
             <div class="container">
                 <div class="row 150%">
-                    <div class="6u 12u(medium)">
+                    <div class="6u 12u$(medium)">
                         <header class="major">
                             <h2>O sistema SGD tem
-                                diversas<br /> vantagens que você pode ver</h2>
+                                diversas<br /> vantagem que você pode ver</h2>
                         </header>
                         <p>O sistema possibilita uma forma melhor do gerenciamento a coleta de dados dos funcionários;</p>
                         <p>O sistema terá recebimentos de feedback dos funcionários por meio de avaliação 360º;</p>
                         <p>O sistema tem ferramentas que ajudam no calculo de rotatividade e relatórios de desligamentos, por parte dos funcionários, como mais um auxilio sobre a rotatividade de pessoal;</p>
-                        
+                        </p>
                     </div>
-                    <div class="6u 12u(medium) important(medium)">
-                        
+                    <div class="6u$ 12u$(medium) important(medium)">
+                        <span class="image fit"><img src="dist/img/1.png" alt="" /></span>
                     </div>
                 </div>
             </div>
         </section>
-
-       <section id="contact">
+        <!-- ... -->
+        <section id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -214,7 +212,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                         <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                        <form name="sentMessage" id="contactForm" novalidate method="post" action="modelo/emailcontato.php" onSubmit="return valida_dados_contato(this)">
+                        <form name="sentMessage" id="contactForm" novalidate method="post" action="../modelo/emailcontato.php" onSubmit="return valida_dados_contato(this)">
                             <div class="row control-group">
                                 <div class="form-group col-xs-12 floating-label-form-group controls">
                                     <label><font color="#FFFFFF">Nome</font></label>
@@ -259,7 +257,7 @@
                         <h4 class="modal-title">Recuperar Senha</h4>
                     </div>
                     <div class="modal-body">
-                        <form action="modelo/salvarNota.php" method="post">
+                        <form action="../modelo/salvarNota.php" method="post">
                             <div class="form-group has-feedback">
                                 <b>E-mail<font color="#FF0000" >*</font></b> 
                                 <input type="email"  class="form-control" name="email" maxlength="40" placeholder="ex: jose@gmail.com"  />
@@ -283,7 +281,7 @@
         <section id="four" class="main style1 special ">
             <div class="container">
                 <header class="major">
-                    <h2>Quer experimentar nosso sistema por 15 dias(grátis)</h2>
+                    <h2>Quer experimente nosso sistema por 15 dias(grátis)</h2>
                 </header>
                 <ul class="actions uniform">
                     <li><a class="button"data-toggle="modal" data-target="#ModalC">Cadastre-se</a></li>
@@ -314,7 +312,7 @@
                         <h4 class="modal-title">cadastro</h4>
                     </div>
                     <div class="modal-body">
-                        <form action="modelo/salvarCadasto.php" method="post" name="f1" onSubmit="return valida_dados_cadastro(this)">
+                        <form action="../modelo/salvarCadasto.php" method="post" name="f1" onSubmit="return valida_dados_cadastro(this)">
                             <div class="form-group has-feedback">
                                 <b>Nome<font color="#FF0000" >*</font></b> 
                                 <input type="nome"  class="form-control" name="nome" maxlength="40" placeholder="ex: jose dos santos "  />
