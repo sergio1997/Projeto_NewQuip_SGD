@@ -4,19 +4,18 @@ include "../modelo/conexao.php";
 <html>
     <head>
         <title>Rsultado</title>
-
         <script type= "text/javascript">
             //função para redirecionar para outra pagina apos 5 segudos 
             //caso aultentique ou não 
             function loginsuccessfully() {
 
-                setTimeout("window.location='../visao/Agendar.php'");
+                setTimeout("window.location='../visao/agendarTarefa.php'");
                 alert('Agenda salvo com sucesso!!');
 
             }
             function loginfailed() {
 
-                setTimeout("window.location='../visao/Agendar.php'");
+                setTimeout("window.location='../visao/agendartarefa.php'");
 
                 alert('grupo que voce digitou não exite');
             }
@@ -35,25 +34,32 @@ include "../modelo/conexao.php";
         $estimativahora = $_POST['estimativahora'];
         $produtividade = $_POST['produtividade'];
 
+   
+$sql= @mysqil_query("SELECT * FROM funcionario WHERE Nome='$funcionario'");
 
-        $sql = @mysqli_query("SELECT * FROM setor WHERE nome_setor LIKE '%" . $setor . "%'");
+$row = @mysqli_num_rows($sql);
 
-        $row = @mysqli_num_rows($sql);
+	while($linha = mysqli_fetch_array($sql)){
+		
+		$id=$linha['id'];
+		 
+	
+        
+	     
+	}
+	 $sqlinsere=  @mysqli_query("INSERT INTO tarefa(data,descricao,dataTerminio,tarefa,obs,produtividade,horaInico,horaFinal) Values('$datainicio','$descricao','$dataterminio','$tarefas','$obs','$produtividade','$horainicio','$horaterminio')");
 
-        if ($row > 0) {
-            while ($linha = mysqli_fetch_array($sql)) {
+	 $query1=@mysqli_query("SELECT * FROM tarefa WHERE data='$datainicio' AND descricao='$descricao' AND dataTerminio='$dataterminio' AND obs='$obs' AND produtividade='$produtividade'");
 
-                $nome = $linha['nome_setor'];
-            }
-            $sqlinsere = @mysqli_query("INSERT INTO agendatarefa(grupo,usuarios,tarefa,tarefasfazer,datainicio,horainicio,dataterminio,horaterminio,estimativadata,estimativahora,produtividade)VALUES('$nome','$tarefas','$tarefasfazer','$datainicio','$horainicio','$dataterminio','$horaterminio','$estimativadata','$estimativahora','$produtividade')");
+	 $linha1= @mysqli_fetch_assoc($query1);
 
 
 
-            // echo "<script>loginsuccessfully()</script>";
-        } else {
+$query2= @mysqli_query("INSERT INTO agendatarefa (id_tarefa,id)Values('$id_tarefa','$id')");
 
-            echo "<script>loginfailed()</script>";
-        }
-        ?>
-    </body>
-</html>
+	 
+	 
+	 
+ 
+ header('location:../visao/listartarefas.php');
+?>
