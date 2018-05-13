@@ -12,6 +12,7 @@ $exibe = @mysqli_fetch_assoc($sql);
 <html>
     <head>
         <?php include("cabecalho.php") ?>
+    </head>
         <?php include("menu.php") ?>
     <div class="content-wrapper">
         <section class="content-header">
@@ -21,18 +22,8 @@ $exibe = @mysqli_fetch_assoc($sql);
         </section>
         <section class="content">
             <div id="calendar"></div>
-            <script type="text/javascript" src="js/vendor/jquery-1.9.1.js"></script>
-            <script type="text/javascript" src="js/vendor/underscore-min.js"></script>
-            <script type="text/javascript" src="js/calendar.js"></script>
-            <script type="text/javascript">
-                var calendar = $("#calendar").calendar(
-                        {
-                            tmpl_path: "/tmpls/",
-                            events_source: function () {
-                                return [];
-                            }
-                        });
-            </script>
+      
+            
 
         </section>
     </div>
