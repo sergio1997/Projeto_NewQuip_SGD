@@ -1,28 +1,21 @@
 <?PHP
-
-		include "../modelo/conexao.php ";
+include "../modelo/conexao.php";
 ?>
 <?php
+$nomeSetor = $_POST['nomeSetor'];
+$sqlInsere = @mysqli_query("INSERT INTO setor(nome_setor)VALUES('$nomeSetor')");
 
-$nomeSetor=$_POST['nomeSetor'];
-
-
-     $sqlInsere= @mysql_query("INSERT INTO setor(nome_setor)VALUES('$nomeSetor')");
-    
-
-
-	 //INSERT INTO ClientesCidades (NomeCliente, CidadeCliente, CredCliente) SELECT cc_nome, cc_cidade, cc_cred FROM CliCred WHERE cc_cred > 300;
-
-  header('location:../visao/CadastraGrupo.php');
+//INSERT INTO ClientesCidades (NomeCliente, CidadeCliente, CredCliente) SELECT cc_nome, cc_cidade, cc_cred FROM CliCred WHERE cc_cred > 300;
+header('location:../visao/cadastraGrupo.php');
 ?>
 <html>
-<head>
-<html>
-<head>
-<title>Rsultado</title>
+    <head>
+    <html>
+        <head>
+            <title>Rsultado</title>
 
-</head>
-<body>
+        </head>
+        <body>
 
-</body>
-</html>
+        </body>
+    </html>
