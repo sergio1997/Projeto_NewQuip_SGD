@@ -40,7 +40,7 @@
                     <li class="treeview">
                         <a href="#"><i class="fa fa-calendar-check-o"></i> <span>Agenda de tarefas</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
-                            <li><a href="../visao/Agendar.php">Agendar Tarefa</a></li>
+                            <li><a href="../visao/agendarTarefa.php">Agendar Tarefa</a></li>
                             <li><a href="../visao/listartarefas.php">Listar Tarefas</a></li>
                         </ul>
                     </li>
@@ -112,8 +112,8 @@
                     <li class="treeview">
                         <a href="#"><i class="fa fa-group"></i> <span>Setores</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
-                            <li><a href="../visao/CadastraGrupo.php">Cadastrar setor</a></li>
-                            <li><a href="../visao/ListaGrupo.php">Listar setores</a></li>
+                            <li><a href="../visao/cadastraGrupo.php">Cadastrar setor</a></li>
+                            <li><a href="../visao/listaGrupo.php">Listar setores</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
