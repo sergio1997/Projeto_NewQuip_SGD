@@ -407,9 +407,7 @@ require_once("../modelo/conexao.php");
             </section>
         </div>
         <!--JS SCRIPTS -->
-        <?php include "../visao/contato.php"; ?>
-        <?php include "../visao/suporte.php"; ?>
-
+        
         <!-- jQuery 2.2.0 -->
         <script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
         <!-- Bootstrap 3.3.5 -->
