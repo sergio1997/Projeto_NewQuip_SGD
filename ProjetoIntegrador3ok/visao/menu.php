@@ -80,7 +80,7 @@
                         <a href="#"><i class="glyphicon glyphicon-list-alt"></i> <span>Férias</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
                             <li><a href="../visao/agedarFerias.php">Agendar Férias</a></li>
-                            <li><a href="../visao/listarFerias.php.php">Listar Férias</a></li>
+                            <li><a href="../visao/listarFerias.php">Listar Férias</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
