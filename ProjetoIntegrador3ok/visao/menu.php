@@ -88,8 +88,8 @@
                             <i class="glyphicon glyphicon-user"></i> <span>Funcionário</span> <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="CadastrarFuncionario.php">Cadastar Funcionário</a></li>
-                            <li><a href="../visao/Funcionario.php">Lista Funcionário</a></li>
+                            <li><a href="cadastrarFuncionario.php">Cadastar Funcionário</a></li>
+                            <li><a href="../visao/funcionario.php">Lista Funcionário</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
