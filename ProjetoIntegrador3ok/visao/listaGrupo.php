@@ -24,19 +24,10 @@ include ("../modelo/iniciarsessao.php");
                             </div>
                             <?php
                             // cria a instrução SQL que vai selecionar os dados
-                            $query = @mysqli_query("SELECT * FROM setor INNER JOIN codigo_setor ON codigo_setor.id_setor=setor.id_setor INNER JOIN funcionario ON codigo_setor.id=funcionario.id ");
-// executa a query
-// transforma os dados em um array
-                            $linha = @mysqli_fetch_assoc($query);
-// calcula quantos dados retornaram
-                            $total = @mysqli_num_rows($query);
-
-                            $query1 = @mysqli_query("SELECT * FROM setor");
-// executa a query
-// transforma os dados em um array
-                            $linha1 = @mysqli_fetch_assoc($query1);
-// calcula quantos dados retornaram
-                            $total1 = @mysqli_num_rows($query1);
+                            $query = "SELECT * FROM setor";
+                            $query1 = mysqli_query($conexao, $query);
+                            $linha1 = mysqli_fetch_assoc($query1);
+                            $total = @mysqli_num_rows($query1);
                             ?>
                             <div class="table-responsive">
                                 <table border="0" class="display table" width="100%" id="tdFuncionario"> 
@@ -54,9 +45,8 @@ include ("../modelo/iniciarsessao.php");
                                             <tbody> 
                                                 <tr>
                                                     <td ><?= $linha1['id_setor'] ?> </td> <td><?= $linha1['nome_setor'] ?></td>
-                                                    <td><a href="../visao/funcionarioSetor.php?id=<?php echo $linha1['id_setor']; ?>"><button class="btn btn-primary">Funcionario </button></a></td>
                                                     <td><a href="../visao/Alterargrupo.php?id=<?php echo $linha1['id_setor']; ?>"><button class="btn btn-primary">Alterar </button></a></td>
-                                                    <td><a href="../modelo/Excluirgrupo.php?id=<?php echo $linha['id_setor']; ?>" onClick="return confirm('Deseja realmente deletar o funcionario: <?php echo $linha['id_setor']; ?> ?')"><button class="btn btn-primary">Excluir </button></a></td>
+                                                    <td><a href="../modelo/Excluirgrupo.php?id=<?php echo $linha1['nome_setor']; ?>" onClick="return confirm('Deseja realmente deletar o funcionario: <?php echo $quer['id_setor']; ?> ?')"><button class="btn btn-primary">Excluir </button></a></td>
                                                 </tr>
                                                 <?php
                                                 // finaliza o loop que vai mostrar os dados
@@ -69,7 +59,7 @@ include ("../modelo/iniciarsessao.php");
                             <?php
 // tira o resultado da busca da memória
                             @mysqli_free_result($dados);
-                            echo"<p>Total de Grupos na empresa: $total1<p>";
+                            echo"<p>Total de Grupos na empresa: $total<p>";
                             ?>
                         </div>
                     </div>
