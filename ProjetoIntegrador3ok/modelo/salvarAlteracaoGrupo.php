@@ -22,7 +22,7 @@ $id_setor=$_POST['id_setor'];
 //daos do login
 
 //inserindo dados no banco
-$sql= @mysqli_query("UPDATE  setor SET nome_setor='$nome_setor' WHERE id_setor='$id_setor'" );
+$sql= @mysqli_query("UPDATE  setor SET id_setor='$id_setor' WHERE  nome_setor='$nome_setor" );
 
  echo"alert('Dados de acesso alterado com sucesso!!');";
 ?>
