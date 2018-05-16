@@ -38,7 +38,7 @@
                 <ul class="sidebar-menu">
                     <li class="header">Menu</li>
                     <li class="treeview">
-                        <a href="#"><i class="fa fa-calendar-check-o"></i> <span>Agenda de tarefas</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <a href="#"><i class="fa fa-calendar-check-o"></i> <span>Tarefas</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
                             <li><a href="../visao/agendarTarefa.php">Agendar Tarefa</a></li>
                             <li><a href="../visao/listartarefas.php">Listar Tarefas</a></li>
