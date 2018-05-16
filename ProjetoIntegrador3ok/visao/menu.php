@@ -38,13 +38,6 @@
                 <ul class="sidebar-menu">
                     <li class="header">Menu</li>
                     <li class="treeview">
-                        <a href="#"><i class="fa fa-calendar-check-o"></i> <span>Tarefas</span> <i class="fa fa-angle-left pull-right"></i></a>
-                        <ul class="treeview-menu">
-                            <li><a href="../visao/agendarTarefa.php">Agendar Tarefa</a></li>
-                            <li><a href="../visao/listartarefas.php">Listar Tarefas</a></li>
-                        </ul>
-                    </li>
-                    <li class="treeview">
                         <a href="#"><i class="glyphicon glyphicon-copy"></i> <span>Ausência</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
                             <li><a href="../visao/cadastraFaltas.php">Cadastrar Ausência</a></li>
@@ -114,6 +107,13 @@
                         <ul class="treeview-menu">
                             <li><a href="../visao/cadastraGrupo.php">Cadastrar setor</a></li>
                             <li><a href="../visao/listaGrupo.php">Listar setores</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#"><i class="fa fa-calendar-check-o"></i> <span>Tarefas</span> <i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li><a href="../visao/agendarTarefa.php">Agendar Tarefa</a></li>
+                            <li><a href="../visao/listartarefas.php">Listar Tarefas</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
