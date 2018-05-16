@@ -145,249 +145,250 @@ include "../modelo/conexao.php";
         ?>
     </head>
     <?php include("menu.php") ?>
-    <section class="content-header">
-        <h1>Cadastrar Funcionario</h1>
-    </section>
-    <section class="content">
-        <div class="box box-default color-palette-box">
-            <section class="invoice">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="box box-solid">
-                            <div>
-                                <h3 class="box-title">Dados Pessoais</h3>
-                            </div>
-                            <div class="box-body">
-                                <div class="panel box box-primary"></div>             
-                               
-                                <form action="../modelo/inserefuncionario.php" method="post" name="f1" onSubmit="return valida_dados(this)">
-                                    <div class="form-group has-feedback">
-                                        <b>Nome Completo<font color="#FF0000" >*</font></b> 
-                                        <input type="text"  class="form-control" name="nome" maxlength="60" placeholder="ex: Jose Maria da silva" onKeypress='return soLetras(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Apelido</b> 
-                                        <input type="text"  class="form-control" name="apelido" maxlength="40" placeholder="ex: Jose Maria da silva" onKeypress='return soLetras(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Nome do Pai<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="nome_pai" class="form-control" placeholder="ex: João Pereira da Silva"  maxlength="60"    onKeypress='return soLetras(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Nome da Mãe<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="nome_mae" class="form-control" placeholder="ex: Maria Joaquina da Silva"  maxlength="60"   onKeypress='return soLetras(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback" >
-                                        <b>Sexo<br/>
-                                            <select name="sexo"  value="sexo" class="form-control select2" style="width: 30%;">
-                                                <option>Masculino</option>
-                                                <option>Feminino</option>
+    <div class="content-wrapper">
+        <section class="content-header">
+            <h1>Cadastrar Funcionario</h1>
+        </section>
+        <section class="content">
+            <div class="box box-default color-palette-box">
+                <section class="invoice">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-solid">
+                                <div>
+                                    <h3 class="box-title">Dados Pessoais</h3>
+                                </div>
+                                <div class="box-body">
+                                    <div class="panel box box-primary"></div>             
+
+                                    <form action="../modelo/inserefuncionario.php" method="post" name="f1" onSubmit="return valida_dados(this)">
+                                        <div class="form-group has-feedback">
+                                            <b>Nome Completo<font color="#FF0000" >*</font></b> 
+                                            <input type="text"  class="form-control" name="nome" maxlength="60" placeholder="ex: Jose Maria da silva" onKeypress='return soLetras(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Apelido</b> 
+                                            <input type="text"  class="form-control" name="apelido" maxlength="40" placeholder="ex: Jose Maria da silva" onKeypress='return soLetras(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Nome do Pai<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="nome_pai" class="form-control" placeholder="ex: João Pereira da Silva"  maxlength="60"    onKeypress='return soLetras(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Nome da Mãe<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="nome_mae" class="form-control" placeholder="ex: Maria Joaquina da Silva"  maxlength="60"   onKeypress='return soLetras(event)' />
+                                        </div>
+                                   
+                                        <div class="form-group has-feedback">
+                                            <b>Sexo<font color="#FF0000" >*</font></b> 
+                                                <select name="sexo" class="form-control select2" style="width: 30%;">
+                                                    <option>Masculino</option>
+                                                    <option>Feminino</option>
+                                                </select>
+                                        </div>
+                                
+                                    
+                                        <div class="form-group has-feedback">
+                                            <b>CPF<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="cpf" class="form-control" placeholder="ex: 99999999999" maxlength="11" onkeypress='return soNumero(event)' />			
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>RG<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="rg" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Órgão Emissor<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="orgao_emissor" class="form-control" placeholder="ex: SPP"  maxlength="11"   onKeypress='return soLetras(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Emissão RG<font color="#FF0000" >*</font></b> 
+                                            <input type="date" name="emissao_rg" class="form-control"  />
+                                        </div>
+                                        <div class="form-group has-feedback" >
+                                            <b>Data de Nascimento<font color="#FF0000" >*</font></b> 
+                                            <input type="date" name="data_nascimento" class="form-control" />
+                                        </div>
+                                        <div class="form-group has-feedback" >
+                                            <b>Escolaridade<font color="#FF0000" >*</font></b> 
+                                            <select name="escolaridade" class="form-control select2" style="width: 30%;">
+                                                <option>não estudei</option>
+                                                <option>Ensino Fundamental Incompleto</option>
+                                                <option>Ensino Fundamental Complento</option>
+                                                <option>Ensino Médio Incompleto</option>
+                                                <option>Ensino Médio Completo</option>
+                                                <option>Ensino Superio Incompleto</option>
+                                                <option>Ensino Superio Completo</option>
                                             </select>
-                                    </div>
-                                </form>
-                                    <div class="form-group has-feedback">
-                                        <b>CPF<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="cpf" class="form-control" placeholder="ex: 99999999999" maxlength="11" onkeypress='return soNumero(event)' />			
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>RG<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="rg" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Órgão Emissor<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="orgao_emissor" class="form-control" placeholder="ex: SPP"  maxlength="11"   onKeypress='return soLetras(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Emissão RG<font color="#FF0000" >*</font></b> 
-                                        <input type="date" name="emissao_rg" class="form-control"  />
-                                    </div>
-                                    <div class="form-group has-feedback" >
-                                        <b>Data de Nascimento<font color="#FF0000" >*</font></b> 
-                                        <input type="date" name="data_nascimento" class="form-control" />
-                                    </div>
-                                    <div class="form-group has-feedback" >
-                                        <b>Escolaridade<font color="#FF0000" >*</font></b> 
-                                        <select name="escolaridade" class="form-control select2" style="width: 30%;">
-                                            <option>não estudei</option>
-                                            <option>Ensino Fundamental Incompleto</option>
-                                            <option>Ensino Fundamental Complento</option>
-                                            <option>Ensino Médio Incompleto</option>
-                                            <option>Ensino Médio Completo</option>
-                                            <option>Ensino Superio Incompleto</option>
-                                            <option>Ensino Superio Completo</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Número da Carteira de Trabalho<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="NMcarteira_trabalho" class="form-control" placeholder="ex: 9999999"  maxlength="7"   onkeypress='return soNumero(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>PIS<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="pis" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Data de Admisão<font color="#FF0000" >*</font></b> 
-                                        <input type="date" name="data_admissao" class="form-control"  />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Cargo<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="cargo" class="form-control" placeholder="ex: Gerente"  maxlength="30"   onKeypress='return soLetras(event)' />
-                                    </div>
-                                    <?php
-                                    // cria a instrução SQL que vai selecionar os dados
-                                    $query = sprintf("SELECT * FROM setor");
-                                    // executa a query
-                                    $dados = mysqli_query($conexao, $query) or die(mysqli_error());
-                                    // transforma os dados em um array
-                                    $linha = mysqli_fetch_assoc($dados);
-                                    // calcula quantos dados retornaram
-                                    $total = mysqli_num_rows($dados);
-                                    ?>
-                                    <div class="form-group has-feedback">
-                                        <b>Setor<font color="#FF0000" >*</font></b> 
-                                        <select  name="setor" class="form-control select2" style="width: 30%;"   maxlength="11"   onKeypress='return soLetras(event)' />
-                                        <option></option>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Número da Carteira de Trabalho<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="NMcarteira_trabalho" class="form-control" placeholder="ex: 9999999"  maxlength="7"   onkeypress='return soNumero(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>PIS<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="pis" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Data de Admisão<font color="#FF0000" >*</font></b> 
+                                            <input type="date" name="data_admissao" class="form-control"  />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Cargo<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="cargo" class="form-control" placeholder="ex: Gerente"  maxlength="30"   onKeypress='return soLetras(event)' />
+                                        </div>
                                         <?php
-                                        // se o número de resultados for maior que zero, mostra os dados
-                                        if ($total > 0) {
-
-                                            // inicia o loop que vai mostrar todos os dados
-                                            do {
-                                                ?><option><?= $linha['nome_setor'] ?></option>
-
-                                                <?php
-                                                // finaliza o loop que vai mostrar os dados
-                                            } while ($linha = @mysqli_fetch_assoc($dados)); //fimdo if
-                                        }
+                                        // cria a instrução SQL que vai selecionar os dados
+                                        $query = sprintf("SELECT * FROM setor");
+                                        // executa a query
+                                        $dados = mysqli_query($conexao, $query) or die(mysqli_error());
+                                        // transforma os dados em um array
+                                        $linha = mysqli_fetch_assoc($dados);
+                                        // calcula quantos dados retornaram
+                                        $total = mysqli_num_rows($dados);
                                         ?>
-                                        </select>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Salário Base<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="salario_base" class="form-control" placeholder="ex: 99999999999"  maxlength="20"     />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Complemento Salarial<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="complemento_salarial" class="form-control" placeholder="ex: 99999999999"  maxlength="20"   />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Salário Carteira<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="salario_carteira" class="form-control" placeholder="ex: 99999999999"  maxlength="20"   />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Salario Líquido<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="salario_liquido" class="form-control" placeholder="ex: 99999999999"  maxlength="20"  />
-                                    </div>
-                                    <div class="form-group has-feedback" >
-                                        <b>CNH</b> 
-                                        <select name="cnh" class="form-control select2" style="width: 30%;">
-                                            <option>não possui</option>
-                                            <option>possui</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Número de Registro da CNH</b> 
-                                        <input type="text" name="numero_cnh" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback" >
-                                        <b>Categoria da CNH</b> 
-                                        <select name="categoria_cnh" class="form-control select2" style="width: 30%;">
+                                        <div class="form-group has-feedback">
+                                            <b>Setor<font color="#FF0000" >*</font></b> 
+                                            <select  name="setor" class="form-control select2" style="width: 30%;"   maxlength="11"   onKeypress='return soLetras(event)' />
                                             <option></option>
-                                            <option>A</option>
-                                            <option>AB</option>
-                                            <option>AC</option>
-                                            <option>AD</option>
-                                            <option>AE</option>
-                                            <option>B</option>
-                                            <option>C</option>
-                                            <option>D</option>
-                                            <option>E</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Validade CNH</b> 
-                                        <input type="date" name="validade_cnh" class="form-control" />
-                                    </div>
-                                    <h3 class="box-title">Dados de Acesso</h3>
-                                    <div class="panel box box-primary"></div>
-                                    <br/>
-                                    <div class="form-group has-feedback">
-                                        <b>E-mail<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="email" class="form-control" placeholder="ex: exmeplo@gmail.com" maxlength="100"  />      
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Senha<font color="#FF0000" >*</font></b> 
-                                        <input type="password" name="senha" class="form-control"  maxlength="20" />      
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Confirmação de Senha<font color="#FF0000" >*</font></b> 
-                                        <input type="password" name="senha1" class="form-control"  maxlengthn"20" />      
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Nível de Acesso<font color="#FF0000" >*</font></b> 
-                                        <select name="nivel" class="form-control select2" style="width: 30%;">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                        </select>
-                                    </div>
+                                            <?php
+                                            // se o número de resultados for maior que zero, mostra os dados
+                                            if ($total > 0) {
 
-                                    <h3 class="box-title">Dados de Endereço</h3>
-                                    <div class="panel box box-primary"></div>
-                                    <br/>
-                                    <div class="form-group has-feedback">
-                                        <b>Estado<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="estado" class="form-control" placeholder="ex: Ceára"  maxlength="30"   onKeypress='return soLetras(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>UF<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="uf" class="form-control" placeholder="ex: CE"  maxlength="2"   onKeypress='return soLetras(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>CEP<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="cep" class="form-control"  maxlength="8"  placeholder="ex: 99999999" onkeypress='return soNumero(event)' />      
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Cidade<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="cidade" class="form-control" placeholder="ex: Brejo Santo"  maxlength="30"  onKeypress='return soLetras(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Endereço<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="endereco" class="form-control" placeholder="ex: rua da Aldeota" maxlength="40" onKeypress='return soLetras(event)' />      
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Complemento</b> 
-                                        <input type="text" name="complemento" class="form-control"  maxlength="20"onKeypress='return soLetras(event)' />      
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Número<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="numero" class="form-control" placeholder="ex: 26"  maxlength="11" />      
-                                    </div> 
-                                    <div class="form-group has-feedback">
-                                        <b>Bairro<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="bairro" class="form-control"  maxlength="40" placeholder="ex: centro" onKeypress='return soLetras(event)' />      
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Telefone<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="telefone" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <b>Celular<font color="#FF0000" >*</font></b> 
-                                        <input type="text" name="celular" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <input type="submit" class="btn btn-primary" value="Cadastrar" />
-                                    </div>
+                                                // inicia o loop que vai mostrar todos os dados
+                                                do {
+                                                    ?><option><?= $linha['nome_setor'] ?></option>
 
-                                </form>
+                                                    <?php
+                                                    // finaliza o loop que vai mostrar os dados
+                                                } while ($linha = @mysqli_fetch_assoc($dados)); //fimdo if
+                                            }
+                                            ?>
+                                            </select>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Salário Base<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="salario_base" class="form-control" placeholder="ex: 99999999999"  maxlength="20"     />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Complemento Salarial<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="complemento_salarial" class="form-control" placeholder="ex: 99999999999"  maxlength="20"   />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Salário Carteira<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="salario_carteira" class="form-control" placeholder="ex: 99999999999"  maxlength="20"   />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Salario Líquido<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="salario_liquido" class="form-control" placeholder="ex: 99999999999"  maxlength="20"  />
+                                        </div>
+                                        <div class="form-group has-feedback" >
+                                            <b>CNH</b> 
+                                            <select name="cnh" class="form-control select2" style="width: 30%;">
+                                                <option>não possui</option>
+                                                <option>possui</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Número de Registro da CNH</b> 
+                                            <input type="text" name="numero_cnh" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback" >
+                                            <b>Categoria da CNH</b> 
+                                            <select name="categoria_cnh" class="form-control select2" style="width: 30%;">
+                                                <option></option>
+                                                <option>A</option>
+                                                <option>AB</option>
+                                                <option>AC</option>
+                                                <option>AD</option>
+                                                <option>AE</option>
+                                                <option>B</option>
+                                                <option>C</option>
+                                                <option>D</option>
+                                                <option>E</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Validade CNH</b> 
+                                            <input type="date" name="validade_cnh" class="form-control" />
+                                        </div>
+                                        <h3 class="box-title">Dados de Acesso</h3>
+                                        <div class="panel box box-primary"></div>
+                                        <br/>
+                                        <div class="form-group has-feedback">
+                                            <b>E-mail<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="email" class="form-control" placeholder="ex: exmeplo@gmail.com" maxlength="100"  />      
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Senha<font color="#FF0000" >*</font></b> 
+                                            <input type="password" name="senha" class="form-control"  maxlength="20" />      
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Confirmação de Senha<font color="#FF0000" >*</font></b> 
+                                            <input type="password" name="senha1" class="form-control"  maxlengthn"20" />      
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Nível de Acesso<font color="#FF0000" >*</font></b> 
+                                            <select name="nivel" class="form-control select2" style="width: 30%;">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+
+                                        <h3 class="box-title">Dados de Endereço</h3>
+                                        <div class="panel box box-primary"></div>
+                                        <br/>
+                                        <div class="form-group has-feedback">
+                                            <b>Estado<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="estado" class="form-control" placeholder="ex: Ceára"  maxlength="30"   onKeypress='return soLetras(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>UF<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="uf" class="form-control" placeholder="ex: CE"  maxlength="2"   onKeypress='return soLetras(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>CEP<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="cep" class="form-control"  maxlength="8"  placeholder="ex: 99999999" onkeypress='return soNumero(event)' />      
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Cidade<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="cidade" class="form-control" placeholder="ex: Brejo Santo"  maxlength="30"  onKeypress='return soLetras(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Endereço<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="endereco" class="form-control" placeholder="ex: rua da Aldeota" maxlength="40" onKeypress='return soLetras(event)' />      
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Complemento</b> 
+                                            <input type="text" name="complemento" class="form-control"  maxlength="20"onKeypress='return soLetras(event)' />      
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Número<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="numero" class="form-control" placeholder="ex: 26"  maxlength="11" />      
+                                        </div> 
+                                        <div class="form-group has-feedback">
+                                            <b>Bairro<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="bairro" class="form-control"  maxlength="40" placeholder="ex: centro" onKeypress='return soLetras(event)' />      
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Telefone<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="telefone" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <b>Celular<font color="#FF0000" >*</font></b> 
+                                            <input type="text" name="celular" class="form-control" placeholder="ex: 99999999999"  maxlength="11"   onkeypress='return soNumero(event)' />
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="submit" class="btn btn-primary" value="Cadastrar" />
+                                        </div>
+
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
-    </section>
-    
-
-
-        <?php include("rodape.php") ?>
+                </section>
+            </div>
+        </section>
+    </div>
+    <?php include("rodape.php") ?>
