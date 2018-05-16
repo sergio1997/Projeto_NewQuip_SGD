@@ -3,7 +3,7 @@ include "../modelo/conexao.php";
 ?>
 <?php
 $nomeSetor =filter_input(INPUT_POST, 'nomeSetor', FILTER_SANITIZE_STRING);
- echo "nomeSetor: $nomeSetor";
+// echo "nomeSetor: $nomeSetor";
 //$nomeSetor = $_POS['nomeSetor'];
 $sqlInsere = "INSERT INTO setor (nome_setor) VALUES ('$nomeSetor')";
 mysqli_query($conexao, $sqlInsere);
