@@ -16,7 +16,7 @@ function loginsuccessfully(){
 }
 function loginfailed(){
 	
-	setTimeout("window.location='../visao/index.php'");
+	setTimeout("window.location='../'");
 	
 	alert('email ou senha invalida');
 }
