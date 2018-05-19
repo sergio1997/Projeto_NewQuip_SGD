@@ -381,7 +381,6 @@ include "../modelo/conexao.php";
                                         <div class="form-group has-feedback">
                                             <input type="submit" class="btn btn-primary" value="Cadastrar" />
                                         </div>
-
                                     </form>
                                 </div>
                             </div>
