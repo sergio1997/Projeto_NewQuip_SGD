@@ -48,9 +48,9 @@ $id = $_GET['id'];
                                         <b>Motivo<font color="#FF0000" >*</font></b> 
                                         <input type="text"  class="form-control" name="motivo" maxlength="40" />
                                     </div>
+                                    <input type="submit" class="btn btn-primary" value="Cadastrar" />
                                 </form>
                             </div>
-                            <input type="submit" class="btn btn-primary" value="Cadastrar" />
                         </div>  
                     </div>
                 </section>
