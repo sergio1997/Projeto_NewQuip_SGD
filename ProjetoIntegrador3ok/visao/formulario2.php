@@ -123,7 +123,6 @@ include "../modelo/conexao.php ";
                                         <option>Quase Sempre</option>
                                     </select>
                                 </div>
-                                </select>
                             </div>
                             <div class="form-group">
                                 <label>2. Ao resolver as dificuldades do dia a dia saber expor suas necessidades e fazer perguntas que auxiliem?</label>
