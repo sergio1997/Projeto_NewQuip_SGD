@@ -8,7 +8,7 @@ $dataFinal= $_POST['dataFinal'];
 
 $query = sprintf("SELECT * FROM funcionario WHERE Nome='$nomeFuncionario'");
 // executa a query
-$dados = mysqli_query($query, $conexao) or die(mysqli_error());
+$dados = mysqli_query($conexao, $query) or die(mysqli_error());
 // transforma os dados em um array
 $linha = mysqli_fetch_assoc($dados);
 
