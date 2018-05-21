@@ -27,7 +27,7 @@ include "../modelo/iniciarsessao.php";
                     $id_funcionario = $_GET['id'];
                     // definições de host, database, usuário e senha
                     // cria a instrução SQL que vai selecionar os dados
-                    $query = mysqli_query("SELECT *,date_format(data_falta, '%d/%m/%Y') AS data_falta FROM faltas INNER JOIN codigo_faltas ON codigo_faltas.id_faltas=faltas.id_falta INNER JOIN funcionario ON codigo_faltas.id=funcionario.id WHERE funcionario.id='$id_funcionario' ");
+                    $query ="SELECT *,date_format(data_falta, '%d/%m/%Y') AS data_falta FROM faltas INNER JOIN codigo_faltas ON codigo_faltas.id_faltas=faltas.id_falta INNER JOIN funcionario ON codigo_faltas.id=funcionario.id WHERE funcionario.id='$id_funcionario' ";
                     $query1 = mysqli_query($conexao, $query);
                     // executa a query
                     //$dados = mysql_query($query, $conexao) or die(mysql_error());
