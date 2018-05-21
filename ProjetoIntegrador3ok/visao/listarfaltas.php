@@ -28,12 +28,13 @@ include "../modelo/iniciarsessao.php";
                     // definições de host, database, usuário e senha
                     // cria a instrução SQL que vai selecionar os dados
                     $query = mysqli_query("SELECT *,date_format(data_falta, '%d/%m/%Y') AS data_falta FROM faltas INNER JOIN codigo_faltas ON codigo_faltas.id_faltas=faltas.id_falta INNER JOIN funcionario ON codigo_faltas.id=funcionario.id WHERE funcionario.id='$id_funcionario' ");
+                    $query1 = mysqli_query($conexao, $query);
                     // executa a query
                     //$dados = mysql_query($query, $conexao) or die(mysql_error());
                     // transforma os dados em um array
-                    $linha = @mysqli_fetch_assoc($query);
+                    $linha = @mysqli_fetch_assoc($query1);
                     // calcula quantos dados retornaram
-                    $total = @mysqli_num_rows($query);
+                    $total = @mysqli_num_rows($query1);
                     ?>
                     <div class="table-responsive">
                         <table border="0" class="display table" width="100%" id="tdFuncionario"> 
@@ -56,7 +57,7 @@ include "../modelo/iniciarsessao.php";
                                         </tr>
                                         <?php
                                         // finaliza o loop que vai mostrar os dados
-                                    } while ($linha = mysqli_fetch_assoc($query)); //fimdo if
+                                    } while ($linha = mysqli_fetch_assoc($query1)); //fimdo if
                                 }
                                 ?>
                             </tbody>
