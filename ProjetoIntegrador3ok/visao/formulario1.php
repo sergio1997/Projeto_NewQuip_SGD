@@ -1,6 +1,6 @@
 <?php
 include "../modelo/iniciarsessao.php";
-include "../modelo/conexao.php ";
+include "../modelo/conexao.php";
 ?>
 <html>
     <head>  
