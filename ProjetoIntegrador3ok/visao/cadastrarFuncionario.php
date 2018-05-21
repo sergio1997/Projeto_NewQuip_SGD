@@ -236,7 +236,12 @@ include "../modelo/conexao.php";
                                             <b>Cargo<font color="#FF0000" >*</font></b> 
                                             <input type="text" name="cargo" class="form-control" placeholder="ex: Gerente"  maxlength="30"   onKeypress='return soLetras(event)' />
                                         </div>
-                                        <?php
+                                        
+                                        <div class="form-group has-feedback">
+                                            <b>Setor<font color="#FF0000" >*</font></b> 
+                                            <select  name="setor" class="form-control select2" style="width: 30%;"   maxlength="11"   onKeypress='return soLetras(event)' />
+                                            <option></option>
+                                            <?php
                                         // cria a instrução SQL que vai selecionar os dados
                                         $query = sprintf("SELECT * FROM setor");
                                         // executa a query
@@ -246,10 +251,6 @@ include "../modelo/conexao.php";
                                         // calcula quantos dados retornaram
                                         $total = mysqli_num_rows($dados);
                                         ?>
-                                        <div class="form-group has-feedback">
-                                            <b>Setor<font color="#FF0000" >*</font></b> 
-                                            <select  name="setor" class="form-control select2" style="width: 30%;"   maxlength="11"   onKeypress='return soLetras(event)' />
-                                            <option></option>
                                             <?php
                                             // se o número de resultados for maior que zero, mostra os dados
                                             if ($total > 0) {
@@ -334,7 +335,7 @@ include "../modelo/conexao.php";
                                                 <option>3</option>
                                             </select>
                                         </div>
-
+                                        
                                         <h3 class="box-title">Dados de Endereço</h3>
                                         <div class="panel box box-primary"></div>
                                         <br/>
