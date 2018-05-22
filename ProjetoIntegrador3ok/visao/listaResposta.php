@@ -69,7 +69,7 @@ include ("../modelo/conexao.php");
                     </div>
                     <?php
                     // tira o resultado da busca da memória
-                    @mysql_free_result($dados);
+                    @mysqli_free_result($dados);
                     echo"<p>Total de resposta: $total<p>";
                     ?>
                 </div>
