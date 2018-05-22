@@ -19,7 +19,7 @@ include ("../modelo/conexao.php");
             }
         </script>
     </head>
-    <?php include("memu.php") ?>
+    <?php include("menu.php") ?>
 
     <div class="content-wrapper">
         <section class="content-header">
@@ -37,7 +37,7 @@ include ("../modelo/conexao.php");
                     // transforma os dados em um array
                     $linha = @mysqli_fetch_assoc($query);
                     // calcula quantos dados retornaram
-                    $total = @mysql_num_rows($query);
+                    $total = @mysqli_num_rows($query);
                     ?>
                     <div class="table-responsive">
                         <table border="0" class="display table" width="100%" id="tdFuncionario"> 
