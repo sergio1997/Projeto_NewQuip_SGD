@@ -36,7 +36,7 @@
         <aside class="main-sidebar">
             <section class="sidebar" >
                 <ul class="sidebar-menu">
-                    <li class="header">Menu</li>
+                   
                     <li class="treeview">
                         <a href="#"><i class="glyphicon glyphicon-copy"></i> <span>Ausência</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
@@ -47,10 +47,14 @@
                     <li class="treeview">
                         <a href="#"><i class="glyphicon glyphicon-pencil"></i> <span>Avaliação</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
-                            <li><a href="../visao/formulario1.php">Avaliação 1</a></li>
-                            <li><a href="../visao/formulario2.php">Avaliação 2</a></li>
-                            <li><a href="../visao/formulario3.php">Avaliação 3</a></li>
-                            <li><a href="../visao/informações.php">Informações da Avaliação</a></li>
+                            <li class="treeview">
+                                <a href="#"><i></i> <span>Avaliação 360°</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li><a href="../visao/avaliadoformulario1.php">Avaliação enxuta</a></li>
+                                    <li><a href="../visao/avaliadoformulario2.php">Avaliação direta</a></li>
+                                    <li><a href="../visao/avaliadoformulario3.php">Avaliação complexa</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li class="treeview">
@@ -59,6 +63,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="../visao/desligamento.php">Desligar funcionário</a></li>
+                            <li><a href="../visao/listarDesligamento.php">Listar Desligamento </a></li>
                         </ul>
                     </li>    
                     <li class="treeview">
@@ -67,6 +72,7 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="../visao/responderfeedback.php">Responder Feedback</a></li>
+                            <li><a href="../visao/listaResposta.php">Listar Feedback</a></li>
                         </ul>
                     </li> 
                     <li class="treeview">
@@ -81,7 +87,7 @@
                             <i class="glyphicon glyphicon-user"></i> <span>Funcionário</span> <i class="fa fa-angle-left pull-right"></i>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="cadastrarFuncionario.php">Cadastar Funcionário</a></li>
+                            <li><a href="../visao/cadastrarFuncionario.php">Cadastar Funcionário</a></li>
                             <li><a href="../visao/funcionario.php">Lista Funcionário</a></li>
                         </ul>
                     </li>
@@ -98,8 +104,8 @@
                     <li class="treeview">
                         <a href="#"><i class="fa fa-comments"></i> <span>Reuniões</span> <i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
-                            <li><a href="../visao/listarReuniao.php">Listar setores</a></li>
-                            <li><a href="../visao/MarcarRuniao.php">Marcar Reunião</a></li>
+                            <li><a href="../visao/listarReuniao.php">Listar Reunão</a></li>
+                            <li><a href="../visao/marcarRuniao.php">Marcar Reunião</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
