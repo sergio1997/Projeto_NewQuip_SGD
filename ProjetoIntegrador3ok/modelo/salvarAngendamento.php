@@ -23,39 +23,27 @@ include "../modelo/conexao.php";
     </head>
     <body>
         <?php
-        $setor = $_POST['grupo'];
         $tarefas = $_POST['tarefas'];
-        $tarefasfazer = $_POST['tarefasfazer'];
         $datainicio = $_POST['datainicio'];
         $horainicio = $_POST['horainicio'];
-        $dataterminio = $_POST['dataterminio'];
-        $horaterminio = $_POST['horaterminio'];
-        $estimativadata = $_POST['estimativadata'];
-        $estimativahora = $_POST['estimativahora'];
-        $produtividade = $_POST['produtividade'];
+         
+//$sql = "SELECT * FROM funcionario WHERE nome='$funcionario'";
 
-   
-$sql= @mysqli_query("SELECT * FROM funcionario WHERE Nome='$funcionario'");
+//$row = mysqli_num_rows($sql);
 
-$row = @mysqli_num_rows($sql);
-
-	while($linha = mysqli_fetch_array($sql)){
+//	while($linha = mysqli_fetch_array($sql)){
 		
-		$id=$linha['id'];
-		 
-	
-        
-	     
-	}
-	 $sqlinsere=  @mysqli_query("INSERT INTO tarefa(data,descricao,dataTerminio,tarefa,obs,produtividade,horaInico,horaFinal) Values('$datainicio','$descricao','$dataterminio','$tarefas','$obs','$produtividade','$horainicio','$horaterminio')");
+//		$id=$linha['id_funcionario'];    
+	     //	}
+	 $sqlinsere= "INSERT INTO tarefa(tarefa,dt_inicio,hr_inicio) Values ($tarefas','$datainicio','$horainicio')";
+         mysqli_query($conexao, $sqlinsere);
+	 //$query1 = "SELECT * FROM tarefa WHERE tarefa='$tarefas' AND dt_inicio='$datainicio' AND hr_inicio='$horainicio'";
 
-	 $query1=@mysqli_query("SELECT * FROM tarefa WHERE data='$datainicio' AND descricao='$descricao' AND dataTerminio='$dataterminio' AND obs='$obs' AND produtividade='$produtividade'");
-
-	 $linha1= @mysqli_fetch_assoc($query1);
+	// $linha1= mysqli_fetch_assoc($query1);
 
 
 
-$query2= @mysqli_query("INSERT INTO agendatarefa (id_tarefa,id)Values('$id_tarefa','$id')");
+//$query2= "INSERT INTO agendatarefa (id_agen_tarefa,id_funcionario)Values('$id_tarefa','$id')";
 
 	 
 	 
