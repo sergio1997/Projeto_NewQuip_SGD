@@ -87,7 +87,7 @@ include ("../modelo/conexao.php");
 
                                 // inicia o loop que vai mostrar todos os dados
                                 do {
-                                    ?><option><?= $linha['nome_setor'] ?></option>
+                                    ?><option><?= $linha['nm_setor'] ?></option>
 
                                     <?php
                                     // finaliza o loop que vai mostrar os dados
