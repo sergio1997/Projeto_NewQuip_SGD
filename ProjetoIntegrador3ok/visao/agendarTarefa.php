@@ -9,19 +9,29 @@ include "../modelo/conexao.php";
             //chama a função (nomeform) -->
             function valida_dados(nomeform)
             {
-                if (nomeform.nome.value == "")
+                if (nomeform.nomefuncionario.value == "")
                 {
-                    alert("Por favor digite o nome.");
+                    alert("Por favor informe nome do funcionario.");
                     return false;
                 }
-                if (nomeform.cpf.value == "")
+                if (nomeform.setor.value == "")
                 {
-                    alert("Por favor digite seu CPF.");
+                    alert("Por favor informe o setor.");
                     return false;
                 }
-                if (nomeform.rg.value == "")
+                if (nomeform.tarefas.value == "")
                 {
-                    alert("Por favor digite seu RG.");
+                    alert("Por favor digite a tarefa.");
+                    return false;
+                }
+                if (nomeform.datainicio.value == "")
+                {
+                    alert("Por favor digite a data de início.");
+                    return false;
+                }
+                if (nomeform.horainicio.value == "")
+                {
+                    alert("Por favor digite a hora de início.");
                     return false;
                 }
                 alert("dados cadastrados com sucesso!!");
@@ -69,7 +79,7 @@ include "../modelo/conexao.php";
 
                                     // inicia o loop que vai mostrar todos os dados
                                     do {
-                                        ?><option><?= $linha['Nome'] ?></option>
+                                        ?><option><?= $linha['nome'] ?></option>
 
                                         <?php
                                         // finaliza o loop que vai mostrar os dados
@@ -98,7 +108,7 @@ include "../modelo/conexao.php";
 
                                     // inicia o loop que vai mostrar todos os dados
                                     do {
-                                        ?><option><?= $linha['nome_setor'] ?></option>
+                                        ?><option><?= $linha['nm_setor'] ?></option>
 
                                         <?php
                                         // finaliza o loop que vai mostrar os dados
@@ -108,16 +118,8 @@ include "../modelo/conexao.php";
                                 </select>
                             </div>
                             <div class="form-group has-feedback">
-                                <b>Funcionarios do grupo<font color="#FF0000" >*</font></b>
-                                <textarea rows="4" cols="50" class="form-control" name="usuarios" ></textarea>
-                            </div>
-                            <div class="form-group has-feedback">
                                 <b>Tarefas<font color="#FF0000" >*</font></b>
                                 <textarea rows="4" cols="50" class="form-control" name="tarefas" ></textarea>
-                            </div>
-                            <div class="form-group has-feedback">
-                                <b>Tarefas ha Fazer<font color="#FF0000" >*</font></b>
-                                <textarea rows="4" cols="50" class="form-control" name="tarefasfazer" ></textarea>
                             </div>
                             <div class="form-group has-feedback">
                                 <b>Data do inicio<font color="#FF0000" >*</font></b> 
@@ -126,26 +128,6 @@ include "../modelo/conexao.php";
                             <div class="form-group has-feedback">
                                 <b>Hora do inicio <font color="#FF0000" >*</font></b> 
                                 <input type="time"  class="form-control" name="horainicio" maxlength="40"  />
-                            </div>
-                            <div class="form-group has-feedback">
-                                <b>Data de terminio<font color="#FF0000" >*</font></b> 
-                                <input type="date"  class="form-control" name="dataterminio" maxlength="40"  />
-                            </div>
-                            <div class="form-group has-feedback">
-                                <b>Hora de Terminio<font color="#FF0000" >*</font></b> 
-                                <input type="time"  class="form-control" name="horaterminio" maxlength="40"/>
-                            </div>
-                            <div class="form-group has-feedback">
-                                <b>Estimativa em Data<font color="#FF0000" >*</font></b> 
-                                <input type="date"  class="form-control" name="estimativadata" maxlength="40"  />
-                            </div>
-                            <div class="form-group has-feedback">
-                                <b>Estimativa em hora<font color="#FF0000" >*</font></b> 
-                                <input type="time"  class="form-control" name="estimativahora" maxlength="40"  />
-                            </div>
-                            <div class="form-group has-feedback">
-                                <b>Produtividade<font color="#FF0000" >*</font></b> 
-                                <input type="text"  class="form-control" name="produtividade" maxlength="3" placeholder="Ex: 100"  />
                             </div>
                             <div>
                                 <input type="submit" class="btn btn-primary" value="Agendar Tarefa" />
