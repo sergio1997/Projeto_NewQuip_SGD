@@ -35,7 +35,7 @@ include "../modelo/conexao.php";
         $produtividade = $_POST['produtividade'];
 
    
-$sql= @mysqil_query("SELECT * FROM funcionario WHERE Nome='$funcionario'");
+$sql= @mysqli_query("SELECT * FROM funcionario WHERE Nome='$funcionario'");
 
 $row = @mysqli_num_rows($sql);
 
