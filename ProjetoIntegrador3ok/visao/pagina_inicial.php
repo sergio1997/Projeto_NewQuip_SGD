@@ -72,7 +72,7 @@ $exibe = @mysqli_fetch_assoc($sql);
                         <div class="icon">
                             <i class="fa fa-graduation-cap"></i>
                         </div>
-                        <a href="../visao/adaicionarTreinamento.php" class="small-box-footer">Acesso Rápido <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="../visao/adicionarTreinamento.php" class="small-box-footer">Acesso Rápido <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             </div>
