@@ -39,9 +39,9 @@ $senha = $_POST['senha'];
 //Comando SQL de verificação de autenticação
 
 $sql1 = "SELECT *
-FROM funcionario
-WHERE email = '$login'
-AND senha = '$senha'";
+FROM login
+WHERE email_orgn = '$login'
+AND hash = '$senha'";
 
 
 $resultado1 = mysqli_query($conexao, $sql1) or die ("Erro na seleção da tabela.");
