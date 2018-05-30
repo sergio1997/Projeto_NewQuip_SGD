@@ -2,7 +2,7 @@
 include "../modelo/conexao.php";
 ?>
 <?php
-$nomeSetor =filter_input(INPUT_POST, 'nomeSetor', FILTER_SANITIZE_STRING);
+$nomeSetor = $_POST['nomeSetor'];
 // echo "nomeSetor: $nomeSetor";
 //$nomeSetor = $_POS['nomeSetor'];
 $sqlInsere = "INSERT INTO setor (nm_setor) VALUES ('$nomeSetor')";
