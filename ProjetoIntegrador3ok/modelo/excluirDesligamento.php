@@ -5,3 +5,4 @@ echo "$id_desligamento";
 $query= @mysqli_query("DELETE FROM desligamento WHERE id_desligamento='$id_desligamento'");
 header('location:../visao/listaDesligamento.php');
 ?>
+    
