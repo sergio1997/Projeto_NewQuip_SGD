@@ -24,7 +24,7 @@ include "../modelo/conexao.php";
                     <?php
                     // definições de host, database, usuário e senha
                     // cria a instrução SQL que vai selecionar os dados
-                    $query = sprintf("SELECT idtreinamento,nome FROM treinamento");
+                    $query = "SELECT id_treinamento,nome FROM treinamento";
                     // executa a query
                     $dados = mysqli_query($conexao, $query) or die(mysqli_error());
                     // transforma os dados em um array
@@ -48,8 +48,8 @@ include "../modelo/conexao.php";
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td ><?= $linha['idtreinamento'] ?> </td> <td><?= $linha['nome'] ?></td>
-                                            <td><a href="../visao/AlteraTreinamento.php?id=<?php echo $linha['idtreinamento']; ?>"><button class="btn btn-primary">Alterar </button></a></td>
+                                            <td ><?= $linha['id_treinamento'] ?> </td> <td><?= $linha['nome'] ?></td>
+                                            <td><a href="../visao/AlteraTreinamento.php?id=<?php echo $linha['id_treinamento']; ?>"><button class="btn btn-primary">Alterar </button></a></td>
                                             <td><a href="../modelo/ExcluirTreinamento.php?id=<?php echo $linha['idtreinamento']; ?>" onClick="return confirm('Deseja realmente deletar o funcionario: <?php echo $linha['idtreinamento']; ?> ?')"><button class="btn btn-primary">Excluir </button></a></td>
                                         </tr>
                                         </tr>
@@ -70,6 +70,4 @@ include "../modelo/conexao.php";
             </div>
         </section>
     </div>
-          
-       
-            <?php include ("rodape.php") ?>
+    <?php include ("rodape.php") ?>
