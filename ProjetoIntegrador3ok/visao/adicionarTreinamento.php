@@ -85,7 +85,32 @@
                         <form action="../modelo/AdicionaTreinamento.php" method="post" name="f1" onSubmit="return valida_dados(this)">
                             <div class="form-group has-feedback">
                                 <b>Funcionário<font color="#FF0000" >*</font></b> 
-                                <input type="text"  class="form-control" name="nome" maxlength="40" placeholder="ex: Jose Maria da silva" onKeypress='return soLetras(event)' />
+                                <select  name="nomefuncionario" class="form-control select2" style="width: 30%;"   maxlength="11"   onKeypress='return soLetras(event)' />
+                                <option></option>
+                                <?php
+                                // cria a instrução SQL que vai selecionar os dados
+                                $query = sprintf("SELECT * FROM nome_usuario");
+                                // executa a query
+                                $dados = mysqli_query($conexao, $query) or die(mysqli_error());
+                                // transforma os dados em um array
+                                $linha = mysqli_fetch_assoc($dados);
+                                // calcula quantos dados retornaram
+                                $total = mysqli_num_rows($dados);
+                                ?>
+                                <?php
+                                // se o número de resultados for maior que zero, mostra os dados
+                                if ($total > 0) {
+
+                                    // inicia o loop que vai mostrar todos os dados
+                                    do {
+                                        ?><option><?= $linha['nome'] ?></option>
+
+                                        <?php
+                                        // finaliza o loop que vai mostrar os dados
+                                    } while ($linha = @mysqli_fetch_assoc($dados)); //fimdo if
+                                }
+                                ?>       
+                                </select>
                             </div>
                             <div class="form-group has-feedback">
                                 <b>Evolução<font color="#FF0000" >*</font></b> 
