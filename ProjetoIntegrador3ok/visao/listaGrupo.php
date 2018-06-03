@@ -46,7 +46,7 @@ include ("../modelo/iniciarsessao.php");
                                                 <tr>
                                                     <td ><?= $linha1['id_setor'] ?> </td> <td><?= $linha1['nm_setor'] ?></td>
                                                     <td><a href="../visao/Alterargrupo.php?id=<?php echo $linha1['id_setor']; ?>"><button class="btn btn-primary">Alterar </button></a></td>
-                                                    <td><a href="../modelo/Excluirgrupo.php?id=<?php echo $linha1['nm_setor']; ?>" onClick="return confirm('Deseja realmente deletar o funcionario: <?php echo $quer['id_setor']; ?> ?')"><button class="btn btn-primary">Excluir </button></a></td>
+                                                    <td><a href="../modelo/Excluirgrupo.php?id=<?php echo $linha1['id_setor']; ?>" onClick="return confirm('Deseja realmente deletar o Setor: <?php echo $linha1['nm_setor']; ?> ?')"><button class="btn btn-primary">Excluir </button></a></td>
                                                 </tr>
                                                 <?php
                                                 // finaliza o loop que vai mostrar os dados
