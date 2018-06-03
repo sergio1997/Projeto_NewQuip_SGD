@@ -1,4 +1,8 @@
-<?php include("../modelo/iniciarsessao.php") ?>
+<?php
+include("../modelo/iniciarsessao.php");
+include("../modelo/conexao.php");
+
+?>
 
 <html>
     <head>
