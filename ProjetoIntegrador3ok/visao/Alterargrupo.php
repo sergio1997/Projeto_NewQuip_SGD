@@ -51,7 +51,7 @@ $nome_setor = $exibe['nm_setor'];
                     <div class="box-body">
                         <div class="panel box box-primary">             
                         </div>
-                        <form action="../modelo/salvarAlteracaoGrupo.php" method="post" name="f1" onSubmit="return valida_dados(this)">
+                        <form action="../modelo/salvarAlteracaoGrupo.php" method="GET" name="f1" onSubmit="return valida_dados(this)">
                             <div class="form-group has-feedback">
                                 <input  type="hidden"  class="form-control" name="id" value="<?php echo"$id"; ?>"  maxlength="40" placeholder="ex: Finaceiro"   onKeypress='return soLetras(event)'/>
                             </div>
