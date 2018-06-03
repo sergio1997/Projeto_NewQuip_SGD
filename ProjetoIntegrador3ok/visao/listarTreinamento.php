@@ -49,7 +49,7 @@ include "../modelo/conexao.php";
                                     <tbody>
                                         <tr>
                                             <td ><?= $linha['id_treinamento'] ?> </td> <td><?= $linha['nome'] ?></td>
-                                            <td><a href="../visao/AlteraTreinamento.php?id=<?php echo $linha['id_treinamento']; ?>"><button class="btn btn-primary">Alterar </button></a></td>
+                                            <td><a href="../visao/alteraTreinamento.php?id=<?php echo $linha['id_treinamento']; ?>"><button class="btn btn-primary">Alterar </button></a></td>
                                             <td><a href="../modelo/ExcluirTreinamento.php?id=<?php echo $linha['idtreinamento']; ?>" onClick="return confirm('Deseja realmente deletar o funcionario: <?php echo $linha['idtreinamento']; ?> ?')"><button class="btn btn-primary">Excluir </button></a></td>
                                         </tr>
                                         </tr>
